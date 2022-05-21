@@ -1,4 +1,3 @@
-import {FC} from 'react';
 import { Link } from 'react-router-dom';
 
 interface Props {
@@ -9,13 +8,13 @@ interface Props {
     backgroundColor: string;
 }
 
-const HomePageBlock: FC<Props> = ({
+const HomePageBlock = ({
     link,
     homeImagePath,
     iconClass,
     title,
     backgroundColor,
-}) => {
+}: Props) => {
     const bgColor = `linear-gradient(to bottom, #f1f1f1 50%, ${backgroundColor} 50%)`;
 
     return (

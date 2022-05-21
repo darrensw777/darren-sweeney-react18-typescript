@@ -5,7 +5,7 @@ import { SoundCloudPlayer } from 'modules';
 
 const Music = () => {
     const i18nDerived = useContext(I18nContext);
-    const { language } = i18nDerived?.default;
+    const { language } = i18nDerived;
     const { MUSIC_COPY } = require(`constants/${language}/containers/music.js`);
 
     return (

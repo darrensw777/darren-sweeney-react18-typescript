@@ -39,7 +39,7 @@ const Links = ({ headerLinks }: HeaderLinksProps) => {
 
 const Header = () => {
     const i18nDerived = useContext(I18nContext);
-    const { language } = i18nDerived?.default;
+    const { language } = i18nDerived;
 
     const { HeaderCopy } = require(`constants/${language}/modules/Header.js`);
     const { headerLinks } = HeaderCopy;

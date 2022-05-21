@@ -26,7 +26,7 @@ const ContactFormik = () => {
     const [messageSendStatus, setMessageSendStatus] = useState("");
 
     const i18nDerived = useContext(I18nContext);
-    const { language } = i18nDerived?.default;
+    const { language } = i18nDerived;
     const { CONTACT_COPY } = require(`constants/${language}/containers/contact.js`);
     const { fieldLabels, formSubmit, validationErrorMessages, misc } = CONTACT_COPY;
     const { name, email, message } = fieldLabels;

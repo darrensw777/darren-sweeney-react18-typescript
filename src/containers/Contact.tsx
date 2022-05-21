@@ -5,7 +5,7 @@ import { I18nContext } from "utils/context";
 
 const Contact = () => {
     const i18nDerived = useContext(I18nContext);
-    const { language } = i18nDerived?.default;
+    const { language } = i18nDerived;
     const {
         CONTACT_COPY,
     } = require(`constants/${language}/containers/contact.js`);

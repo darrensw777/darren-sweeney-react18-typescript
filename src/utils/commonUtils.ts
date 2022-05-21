@@ -6,9 +6,18 @@ export const GetCurrentPage = () => {
     return location.pathname;
 };
 
-export const capitalizeFirstLetter = (string) => string.charAt(0).toUpperCase() + string.slice(1);
+export const capitalizeFirstLetter = (string: string) => string.charAt(0).toUpperCase() + string.slice(1);
 
-export const aboutGreeting = ({ copy }) => {
+interface Copy {
+    morning?: string;
+    evening?: string;
+    afternoon?: string;
+}
+interface CopyProps {
+    copy: Copy;
+}
+
+export const aboutGreeting = ({ copy }: CopyProps) => {
     const d = new Date();
     const timeInHours = d.getHours();
 

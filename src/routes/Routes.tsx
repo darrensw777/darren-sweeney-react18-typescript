@@ -16,7 +16,7 @@ interface ScrollProps {
     children: any;
 }
 
-const ScrollToTop: FC<ScrollProps> = ({ children }) => {
+const ScrollToTop = ({ children }: ScrollProps) => {
     const location = useLocation();
     useLayoutEffect(() => {
         document.documentElement.scrollTo(0, 0);

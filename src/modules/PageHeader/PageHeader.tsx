@@ -1,6 +1,12 @@
-import React from 'react';
+interface PageTitleProps {
+    title: string;
+    subTitle: string;
+}
+interface Props {
+    pageTitle: PageTitleProps;
+}
 
-const PageHeader = ({ pageTitle }) => {
+const PageHeader = ({ pageTitle }: Props) => {
     const { title, subTitle } = pageTitle;
     return (
         <div className="page-header">

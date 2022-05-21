@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const cvPages = ["dsCV1.webp", "dsCV2.webp", "dsCV3.webp", "dsCV4.webp"];
@@ -7,7 +7,7 @@ const CvViewer = () => {
     const [numPages] = useState(cvPages.length);
     const [pageNumber, setPageNumber] = useState(1);
 
-    const changePage = (offset) => {
+    const changePage = (offset: number) => {
         setPageNumber((prevPageNumber) => prevPageNumber + offset);
     };
 
@@ -38,7 +38,7 @@ const CvViewer = () => {
                 <a href="/pdf/DarrenSweeney4.0.pdf" className="download-pdf" target="_blank">
                     Click here to download a PDF of my CV
                 </a>
-                <Link push to="/contact">
+                <Link to="/contact">
                     Contact me
                 </Link>
             </div>

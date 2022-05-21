@@ -4,7 +4,7 @@ import { I18nContext } from "utils/context";
 
 const Gallery = () => {
     const i18nDerived = useContext(I18nContext);
-    const { language } = i18nDerived?.default;
+    const { language } = i18nDerived;
     const {
         GALLERY_COPY,
     } = require(`constants/${language}/containers/gallery.js`);

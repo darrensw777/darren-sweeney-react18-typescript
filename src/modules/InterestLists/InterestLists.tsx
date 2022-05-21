@@ -17,7 +17,7 @@ const InterestLists = ({ interests }: interestsProps) => {
                         <div className="question-container__question">{question}:</div>
                         <div className="question-container__answers">
                             <ul>
-                                {answers.map((answer, idx) => (
+                                {answers?.map((answer, idx) => (
                                     <li key={idx}>{answer}</li>
                                 ))}
                             </ul>

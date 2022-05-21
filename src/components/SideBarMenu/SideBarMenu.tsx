@@ -1,4 +1,4 @@
-import { useState, useEffect, FC } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { GetCurrentPage } from "utils/commonUtils";
 import classNames from "classnames";

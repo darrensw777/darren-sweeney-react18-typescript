@@ -1,24 +1,15 @@
 import { createContext } from "react";
 
 interface I18nInterface {
-    key: string;
-    default: {
-        language: string,
-        locale: string,
-    };
-}
-
-interface DefaultKeyInterface {
     language: string;
     locale: string;
+    setLanguage: Function;
 }
 
 export const i18n: I18nInterface = {
-    key: "i18n",
-    default: {
-        language: "en",
-        locale: "en-GB",
-    },
+    language: "en",
+    locale: "en-GB",
+    setLanguage: () => {},
 };
 
 export const I18nContext = createContext(i18n);

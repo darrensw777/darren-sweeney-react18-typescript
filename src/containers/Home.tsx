@@ -21,7 +21,7 @@ const Sections = navLinksAndStyles
 
 const Home = () => {
     const i18nDerived = useContext(I18nContext);
-    const { language } = i18nDerived?.default;
+    const { language } = i18nDerived;
     const { HOME_COPY } = require(`constants/${language}/containers/home.js`);
 
     return (
