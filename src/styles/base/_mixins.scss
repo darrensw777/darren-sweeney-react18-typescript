@@ -1,0 +1,64 @@
+@import './breakpoints';
+
+@mixin bp-prop($map-values, $property) {
+    @each $bp, $value in $map-values {
+        @if $bp == 'default' {
+            #{$property}: $value;
+        }
+        @if $bp != 'default' {
+            $min-width: map-get($breakpoints-min, $bp);
+
+            @media screen and (min-width: $min-width+'px') {
+                #{$property}: $value;
+            }
+        }
+    }
+}
+
+@mixin outlineShadow {
+    box-shadow: 0 0 0 4px $focus-outline-color;
+}
+
+@mixin padding {
+    padding: $padding;
+}
+
+@mixin padding-left {
+    padding-left: $padding;
+}
+
+@mixin padding-right {
+    padding-right: $padding;
+}
+
+@mixin padding-top {
+    padding-top: $padding;
+}
+
+@mixin margin {
+    margin: $margin;
+}
+
+@mixin margin-bottom {
+    margin-bottom: $margin;
+}
+
+@mixin margin-left {
+    margin-left: $margin;
+}
+
+@mixin margin-right {
+    margin-right: $margin;
+}
+
+@mixin margin-top {
+    margin-top: $margin;
+}
+
+@mixin margin-bottom {
+    margin-bottom: $margin;
+}
+
+@mixin border-radius {
+    border-radius: $border-radius;
+}

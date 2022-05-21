@@ -1,0 +1,10 @@
+footer.main-content-container {
+    border-top: 1px solid $border-grey;
+    .inner-content {
+        display: flex;
+        justify-content: center;
+        .copyright {
+            @include regular-font;
+        }
+    }
+}

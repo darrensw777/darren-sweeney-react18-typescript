@@ -1,0 +1,51 @@
+$breakpoint: 676px;
+
+.cv-viewer {
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media (min-width: $breakpoint) {
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+        }
+        a {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+            @media (min-width: $breakpoint) {
+                flex-basis: unset;
+                justify-content: unset;
+            }
+            @include body-copy;
+            @include margin-bottom;
+        }
+    }
+    
+    .cv-page-container {
+        img {
+            width: 100%;
+        }
+    }
+    .pagination {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        @include margin-bottom;
+        p {
+            text-align: center;
+        }
+        .buttons {
+            display: flex;
+            flex-basis: 100%;
+            justify-content: center;
+            button {
+                background: transparent;
+                @include header-font;
+                border: none;
+                cursor: pointer;
+                font-size: $xl-font-size;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+/* State colors */
+$default: #fff;
+$success: #8ec252;
+$info: #258ba7;
+$warning: #fcd120;
+$error: #ff4454;
+$error-state: #ff4454;
+
+/* Text colors */
+$primary-grey: #333;
+$secondary-grey: #666;
+$input-placeholder-focus: #258ba7;
+$disabled-grey: #999;
+$outline-grey: #ddd;
+$background-grey: #d8d8d8;
+
+/* Brand colors */
+$primary-color: #333;
+$secondary-color: #6e6261;
+$tertiary-color: #c0e6de;
+$background-grey: #eee;
+
+$white: #fff;
+$border-grey: #ddd;
+
+/* Background colors */
+$header-bg: #ffe2da;
+$light-grey: #ececec;
+
+/* Inputs */
+$input-valid-dark: #258ba7;
+$input-valid: rgba(37, 139, 167, 0.2);
+$input-valid-half: rgba(37, 139, 167, 0.5);
+$input-hover-border: #ccc;
+$input-hover-border-checked: red;
+$input-focus-border: #333;
+
+/* Buttons */
+$primary-cta: #ff6f44;
+$primary-cta-hover: #d25c38;
+$primary-cta-disabled: #d9d9d9;
+$secondary-cta: #fff;
+$secondary-cta-hover: #ffdacf;
+$phone-missing-background: rgba(255, 68, 84, 0.1);
+
+/* Radio buttons */
+$radio-unchecked: white !default;
+$radio-checked: orange !default;
+$radio-label: grey !default;
+$radio-label-hover: grey !default;
+$radio-unchecked-hover: rgba(76, 76, 76, 0.08) !default;
+$radio-checked-hover: rgba(229, 80, 0, 0.08) !default;
+$radio-label-small-colour: #707070 !default;
+$radio-error: #fae1e3;
+$radio-error-before: #f4bdc1;
+$radio-icon-error: rgba(255, 68, 84, 0.5);

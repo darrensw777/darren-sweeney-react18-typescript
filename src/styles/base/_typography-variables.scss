@@ -1,0 +1,141 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap);
+
+// Font Variables
+$roboto-slab: 'Roboto Slab', serif;
+$dosis: 'Dosis', serif;
+$open-sans: 'Open Sans', sans-serif;
+
+$header-font: $roboto-slab !default;
+$bold-font: $roboto-slab !default;
+$regular-font: $dosis !default;
+
+$xl-font-size: 1.5em;
+$title-font-size: 1.25em;
+$regular-font-size: 1em;
+$small-font-size: 0.75em;
+$tiny-font-size: 0.5em;
+
+@mixin header-font {
+    font-family: $roboto-slab;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-rendering: optimizeLegibility;
+}
+
+@mixin regular-font {
+    font-family: $dosis;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-rendering: optimizeLegibility;
+    line-height: 24px;
+}
+
+@mixin body-copy-small {
+    @include regular-font;
+    font-size: $small-font-size;
+    @extend %lineHeight14;
+}
+
+@mixin body-copy {
+    @include regular-font;
+    font-size: $regular-font-size;
+    @extend %lineHeight14;
+}
+
+@mixin sidenav {
+    font-family: $bold-font;
+    font-size: $regular-font-size;
+    @extend %lineHeight20;
+    letter-spacing: -0.88px;
+}
+
+@for $i from 6 through 40 {
+    %lineHeight#{$i} {
+        line-height: #{$i}px;
+    }
+}
+
+%tab-title,
+.tab-title {
+    font-family: $bold-font;
+    font-size: $title-font-size;
+    @extend %lineHeight20;
+    letter-spacing: -0.45px;
+}
+
+
+$h1Key: 'h1';
+$h2Key: 'h2';
+$h3Key: 'h3';
+$h4Key: 'h4';
+
+$heading: (
+    'font': (
+        'mobile': (
+            'fontSize': (
+                $h1Key: 36px,
+                $h2Key: 28px,
+                $h3Key: 20px,
+                $h4Key: 16px,
+            ),
+            'lineHeight': (
+                $h1Key: 36px,
+                $h2Key: 28px,
+                $h3Key: 20px,
+                $h4Key: 16px,
+            ),
+            'letterSpacing': (
+                $h1Key: 1px,
+                $h2Key: 0.7px,
+                $h3Key: 0.88x,
+                $h4Key: 0px,
+            ),
+        ),
+        'desktop': (
+            'fontSize': (
+                $h1Key: 48px,
+                $h2Key: 36px,
+                $h3Key: 28px,
+                $h4Key: 20px,
+            ),
+            'lineHeight': (
+                $h1Key: 56px,
+                $h2Key: 36px,
+                $h3Key: 28px,
+                $h4Key: 20px,
+            ),
+            'letterSpacing': (
+                $h1Key: 1px,
+                $h2Key: 0.7px,
+                $h3Key: 0.88x,
+                $h4Key: 0px,
+            ),
+        ),
+    ),
+);
+
+@for $i from 1 through 4 {
+    h#{$i},
+    .h#{$i},
+    %h#{$i} {
+        font-family: $header-font;
+        font-weight: 700;
+        font-size: map-get(
+            map-get(map-get(map-get($heading, 'font'), 'mobile'), 'fontSize'),
+            'h#{$i}'
+        );
+        letter-spacing: map-get(
+            map-get(
+                map-get(map-get($heading, 'font'), 'mobile'),
+                'letterSpacing'
+            ),
+            'h#{$i}'
+        );
+        line-height: map-get(
+            map-get(map-get(map-get($heading, 'font'), 'mobile'), 'lineHeight'),
+            'h#{$i}'
+        );
+    }
+}

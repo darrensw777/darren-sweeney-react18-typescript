@@ -1,0 +1,58 @@
+const navLinksAndStyles = [
+    {
+        link: "/",
+        title: "Home",
+        id: "Home",
+        iconClass: "fa fa-home",
+        backgroundColor: "#2C1320",
+        homeImagePath: "",
+        navBlock: false,
+    },
+    {
+        link: "/about",
+        title: "About me",
+        id: "About",
+        iconClass: "fa fa-info-circle",
+        backgroundColor: "#1abc9c",
+        homeImagePath: "/img/gallery/darren.webp",
+        navBlock: true,
+    },
+    {
+        link: "/work",
+        title: "Work/CV",
+        id: "Work",
+        iconClass: "fa fa-code",
+        backgroundColor: "#3498db",
+        homeImagePath: "/img/gallery/zt4.webp",
+        navBlock: true,
+    },
+    {
+        link: "/music",
+        title: "Music",
+        id: "Music",
+        iconClass: "fa fa-music",
+        backgroundColor: "#9b58b5",
+        homeImagePath: "/img/gallery/singing3.webp",
+        navBlock: true,
+    },
+    {
+        link: "/gallery",
+        title: "Gallery",
+        id: "Pictures",
+        iconClass: "fa fa-picture-o",
+        backgroundColor: "#e67e22",
+        homeImagePath: "/img/gallery/zt7.webp",
+        navBlock: true,
+    },
+    {
+        link: "/Contact",
+        title: "Contact",
+        id: "Contact",
+        iconClass: "fa fa-envelope-o",
+        backgroundColor: "#d9a81d",
+        homeImagePath: "/img/gallery/benidorm5.jpg",
+        navBlock: false,
+    },
+];
+
+export default navLinksAndStyles;

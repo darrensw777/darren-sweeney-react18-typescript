@@ -1,0 +1,21 @@
+$breakpoints-min: (
+    sm: 576,
+    md: 769,
+    lg: 992,
+    xl: 1200
+);
+
+$breakpoints-max: (
+    sm: 575,
+    md: 770,
+    lg: 991,
+    xl: 1199
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 771px,
+    lg: 992px,
+    xl: 1200px
+);
