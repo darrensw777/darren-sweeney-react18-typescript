@@ -1,7 +1,7 @@
-import {useContext} from 'react';
-import { PageHeader } from 'modules';
+import { useContext } from "react";
+import { PageHeader } from "modules";
 import { I18nContext } from "utils/context";
-import { SoundCloudPlayer } from 'modules';
+import { SoundCloudPlayer } from "modules";
 
 const Music = () => {
     const i18nDerived = useContext(I18nContext);

@@ -12,20 +12,24 @@ interface Props {
 const Links = ({ setMenuOpen }: Props) => {
     const currentPage = GetCurrentPage();
 
-    return (<>{navLinksAndStyles.map((navItem, idx) => {
-        const isActive = currentPage === navItem.link;
-        return (
-            <SideNavBlock
-                key={idx}
-                backgroundColor={navItem.backgroundColor}
-                link={navItem.link}
-                iconClass={navItem.iconClass}
-                title={navItem.title}
-                aria-current={isActive}
-                onClick={() => setMenuOpen(false)}
-            />
-        );
-    })}</>);
+    return (
+        <>
+            {navLinksAndStyles.map((navItem, idx) => {
+                const isActive = currentPage === navItem.link;
+                return (
+                    <SideNavBlock
+                        key={idx}
+                        backgroundColor={navItem.backgroundColor}
+                        link={navItem.link}
+                        iconClass={navItem.iconClass}
+                        title={navItem.title}
+                        aria-current={isActive}
+                        onClick={() => setMenuOpen(false)}
+                    />
+                );
+            })}
+        </>
+    );
 };
 
 const SideBarMenu = () => {
@@ -51,11 +55,6 @@ const SideBarMenu = () => {
             </button>
             <div className={containerClasses}>
                 <Link to="/" className="name-logo">
-                    {/* <img
-                            src="/img/logo/logo.svg"
-                            className="logo"
-                            alt="Company logo"
-                        /> */}
                     Darren Sweeney
                 </Link>
                 <div className="nav-block-container">

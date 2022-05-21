@@ -38,9 +38,7 @@ const CvViewer = () => {
                 <a href="/pdf/DarrenSweeney4.0.pdf" className="download-pdf" target="_blank">
                     Click here to download a PDF of my CV
                 </a>
-                <Link to="/contact">
-                    Contact me
-                </Link>
+                <Link to="/contact">Contact me</Link>
             </div>
             <div className="cv-page-container">
                 <img src={`/img/cv/ds${pageNumber}.webp`} alt={`CV page number ${pageNumber + 1}`} />

@@ -20,9 +20,10 @@
   },
   "peacock.color": "#42b883",
   "[typescriptreact]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
+  "typescript.format.enable": false,
   "[typescript]": {
-    "editor.formatOnSave": true
-  }
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }

@@ -1,13 +1,11 @@
-import {useContext} from "react";
-import { PageHeader, ImagesGallery } from 'modules';
+import { useContext } from "react";
+import { PageHeader, ImagesGallery } from "modules";
 import { I18nContext } from "utils/context";
 
 const Gallery = () => {
     const i18nDerived = useContext(I18nContext);
     const { language } = i18nDerived;
-    const {
-        GALLERY_COPY,
-    } = require(`constants/${language}/containers/gallery.js`);
+    const { GALLERY_COPY } = require(`constants/${language}/containers/gallery.js`);
 
     return (
         <div className="page-wrapper">

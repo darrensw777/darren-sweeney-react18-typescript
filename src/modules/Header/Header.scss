@@ -4,9 +4,11 @@ header {
     position: relative;
     @include margin-bottom;
     z-index: 2;
+
     @media (min-width: 768px) {
         position: relative;
-        & + div {
+
+        &+div {
             padding-top: 0;
         }
     }
@@ -16,20 +18,25 @@ header {
             width: 100%;
             display: flex;
             height: $header-height;
+
             @media (min-width: 768px) {
                 justify-content: space-between;
             }
+
             justify-content: center;
             align-items: center;
+
             ul,
-            ul > li,
+            ul>li,
             .logo {
                 display: inline-block;
             }
+
             .logo {
                 margin: $padding 0;
                 max-width: 160px;
             }
+
             .name-logo {
                 width: 100%;
                 text-align: center;
@@ -37,35 +44,41 @@ header {
                 font-family: $header-font;
                 font-size: 36px;
                 color: $primary-grey;
+
                 @media (min-width: 768px) {
                     text-align: left;
                 }
+
                 @media (max-width: 526px) {
                     text-align: right;
                 }
             }
+
             ul {
                 display: none;
+
                 @media (min-width: 768px) {
                     display: inline-flex;
                     height: $header-height;
                 }
+
                 list-style: none;
                 margin-bottom: 0;
-                & > li {
+
+                &>li {
                     @include margin-right;
+
                     a {
                         font-family: $regular-font;
                         height: $header-height;
                         display: flex;
                         align-items: center;
+
                         &[aria-current='true'],
                         &:hover {
-                            background-image: linear-gradient(
-                                0deg,
-                                #333,
-                                #333
-                            );
+                            background-image: linear-gradient(0deg,
+                                    #333,
+                                    #333);
                             background-clip: content-box;
                             background-size: 1px 4px;
                             background-position: bottom;
