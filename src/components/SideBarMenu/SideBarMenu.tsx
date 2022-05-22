@@ -33,7 +33,8 @@ const Links = ({ setMenuOpen }: Props) => {
 };
 
 const SideBarMenu = () => {
-    const [menuOpen, setMenuOpen] = useState(false);
+    // prettier-ignore
+    const [menuOpen, setMenuOpen] = useState<boolean>(false);
     const containerClasses = classNames("sidebar-menu", menuOpen && "open");
     const burgerClasses = classNames("btn", "close-menu-icon", menuOpen && "open");
     useEffect(() => {

@@ -23,7 +23,8 @@ const encode = (data: EncodeProps) => {
 };
 
 const ContactFormik = () => {
-    const [messageSendStatus, setMessageSendStatus] = useState("");
+    // prettier-ignore
+    const [messageSendStatus, setMessageSendStatus] = useState<string | null>(null);
 
     const i18nDerived = useContext(I18nContext);
     const { language } = i18nDerived;
