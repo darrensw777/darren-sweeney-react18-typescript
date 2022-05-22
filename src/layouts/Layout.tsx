@@ -1,12 +1,13 @@
-import { Header, Footer } from 'modules';
-import { SideBarMenu } from 'components';
-import './Layout.scss';
+import { ReactNode, ReactElement } from "react";
+import { Header, Footer } from "modules";
+import { SideBarMenu } from "components";
+import "./Layout.scss";
 
 interface Props {
-    children: React.ReactNode
+    children: ReactNode;
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children }: Props): ReactElement => {
     return (
         /* This ID is required for the side menu */
         <div id="outerContainer">

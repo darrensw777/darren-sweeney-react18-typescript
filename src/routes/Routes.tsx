@@ -1,4 +1,4 @@
-import { Suspense, lazy, useLayoutEffect, FC } from "react";
+import { Suspense, lazy, useLayoutEffect, ReactNode, ReactElement } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Layout from "layouts";
 import Helmet from "react-helmet";
@@ -12,16 +12,12 @@ const Music = lazy(() => import("containers/Music"));
 const Contact = lazy(() => import("containers/Contact"));
 const Gallery = lazy(() => import("containers/Gallery"));
 
-interface ScrollProps {
-    children: any;
-}
-
-const ScrollToTop = ({ children }: ScrollProps) => {
+const ScrollToTop = ({ children }: { children: ReactNode }): ReactElement => {
     const location = useLocation();
     useLayoutEffect(() => {
         document.documentElement.scrollTo(0, 0);
     }, [location.pathname]);
-    return children;
+    return <>{children}</>;
 };
 
 interface Props {
@@ -31,7 +27,7 @@ interface Props {
     page: string;
 }
 
-const RenderWithLayout: FC<Props> = ({ Component, Layout, props, page = "" }) => {
+const RenderWithLayout = ({ Component, Layout, props, page = "" }: Props) => {
     const { siteUrl, docTitlePrefix } = companyInfo;
     const pageMeta = meta[page];
 
