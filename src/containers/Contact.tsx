@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="page-wrapper">
             <div className="inner-content">
                 <PageHeader pageTitle={CONTACT_COPY.pageTitle} />
-                <ContactFormik />
+                <ContactFormik CONTACT_COPY={CONTACT_COPY} />
             </div>
         </div>
     );

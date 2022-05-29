@@ -1,9 +1,8 @@
 // @ts-nocheck
 
-import { useState, useContext } from "react";
+import { useState } from "react";
 import { Formik, Field } from "formik";
 import contactFormValidation from "validation/contactForm";
-import { I18nContext } from "utils/context";
 
 interface MessageProps {
     name: string;
@@ -22,13 +21,10 @@ const encode = (data: EncodeProps) => {
         .join("&");
 };
 
-const ContactFormik = () => {
+const ContactFormik = ({ CONTACT_COPY }) => {
     // prettier-ignore
     const [messageSendStatus, setMessageSendStatus] = useState<string | null>(null);
 
-    const i18nDerived = useContext(I18nContext);
-    const { language } = i18nDerived;
-    const { CONTACT_COPY } = require(`constants/${language}/containers/contact.js`);
     const { fieldLabels, formSubmit, validationErrorMessages, misc } = CONTACT_COPY;
     const { name, email, message } = fieldLabels;
     const { formSuccess, formError } = formSubmit;
