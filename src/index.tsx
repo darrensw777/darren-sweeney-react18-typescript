@@ -2,15 +2,13 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes/';
-import { I18nContext, i18n } from 'utils/context';
+
 import './styles/styles.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as Element);
 root.render(
     <BrowserRouter basename="">
-        <I18nContext.Provider value={i18n}>
-            <Routes />
-        </I18nContext.Provider>
+        <Routes />
     </BrowserRouter>
 );
 

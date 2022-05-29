@@ -1,11 +1,4 @@
-interface ObjectProps {
-    question: string;
-    answers: Array<string>;
-}
-
-interface InterestsProps {
-    interests: ObjectProps[];
-}
+import { InterestsProps } from "utils/interfaces";
 
 const InterestLists = ({ interests }: InterestsProps) => {
     return (

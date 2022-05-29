@@ -1,11 +1,10 @@
-import { useContext } from "react";
 import { PageHeader, AboutMeBlock } from "modules";
-import { I18nContext } from "utils/context";
+import { useI18n } from "contexts/I18n";
 
 const About = () => {
-    const i18nDerived = useContext(I18nContext);
-    const { language } = i18nDerived;
-    const { ABOUT_COPY } = require(`constants/${language}/containers/about.js`);
+    const { i18n } = useI18n();
+    const { language } = i18n;
+    const { ABOUT_COPY } = require(`constants/${language}/containers/about`);
 
     return (
         <div className="page-wrapper">

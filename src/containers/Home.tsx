@@ -1,8 +1,7 @@
-import { useContext } from "react";
 import { PageHeader } from "modules";
 import { HomePageBlock } from "components";
 import navLinksAndStyles from "utils/navLinksAndStyles";
-import { I18nContext } from "utils/context";
+import { useI18n } from "contexts/I18n";
 
 const Sections = navLinksAndStyles
     .filter((item) => item.navBlock)
@@ -20,9 +19,9 @@ const Sections = navLinksAndStyles
     });
 
 const Home = () => {
-    const i18nDerived = useContext(I18nContext);
-    const { language } = i18nDerived;
-    const { HOME_COPY } = require(`constants/${language}/containers/home.js`);
+    const { i18n } = useI18n();
+    const { language } = i18n;
+    const { HOME_COPY } = require(`constants/${language}/containers/home`);
 
     return (
         <div className="page-wrapper">

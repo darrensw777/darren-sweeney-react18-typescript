@@ -1,15 +1,15 @@
 import { createContext } from "react";
 
-interface I18nInterface {
+export interface I18nInterface {
     language: string;
     locale: string;
     setLanguage: Function;
 }
 
-export const i18n: I18nInterface = {
+export const i18n = {
     language: "en",
     locale: "en-GB",
     setLanguage: () => {},
 };
-
-export const I18nContext = createContext(i18n);
+// prettier-ignore
+export const I18nContext = createContext<I18nInterface>(i18n);

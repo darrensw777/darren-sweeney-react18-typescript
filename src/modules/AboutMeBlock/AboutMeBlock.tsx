@@ -1,17 +1,8 @@
 import { aboutGreeting } from "utils/commonUtils";
 import { InterestLists } from "modules";
+import { CopyPropsParent } from "utils/interfaces";
 
-interface copyProps {
-    general: Array<string>;
-    greetings: object;
-    interests: Array<object>;
-}
-
-interface copyPropsParent {
-    copy: copyProps;
-}
-
-const AboutMeBlock = ({ copy }: copyPropsParent) => {
+const AboutMeBlock = ({ copy }: CopyPropsParent) => {
     const { general, interests, greetings } = copy;
     const generalCopy = general.map((para, idx) => <p key={idx}>{para}</p>);
     return (

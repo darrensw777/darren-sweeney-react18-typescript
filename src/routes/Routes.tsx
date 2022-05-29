@@ -4,6 +4,7 @@ import Layout from "layouts";
 import Helmet from "react-helmet";
 import meta from "utils/seo";
 import { companyInfo } from "utils/config";
+import { I18nProvider } from "contexts/I18nProvider";
 
 const Home = lazy(() => import("containers/Home"));
 const About = lazy(() => import("containers/About"));
@@ -58,20 +59,28 @@ const RenderWithLayout = ({ Component, Layout, props, page = "" }: Props) => {
 const AllRoutes = () => {
     return (
         <Suspense>
-            <Routes>
-                <Route path="/" element={<RenderWithLayout Component={Home} Layout={Layout} page="home" />} />
-                <Route path="/about" element={<RenderWithLayout Component={About} Layout={Layout} page="about" />} />
-                <Route path="/work" element={<RenderWithLayout Component={Work} Layout={Layout} page="work" />} />
-                <Route path="/music" element={<RenderWithLayout Component={Music} Layout={Layout} page="music" />} />
-                <Route
-                    path="/gallery"
-                    element={<RenderWithLayout Component={Gallery} Layout={Layout} page="gallery" />}
-                />
-                <Route
-                    path="/contact"
-                    element={<RenderWithLayout Component={Contact} Layout={Layout} page="contact" />}
-                />
-            </Routes>
+            <I18nProvider>
+                <Routes>
+                    <Route path="/" element={<RenderWithLayout Component={Home} Layout={Layout} page="home" />} />
+                    <Route
+                        path="/about"
+                        element={<RenderWithLayout Component={About} Layout={Layout} page="about" />}
+                    />
+                    <Route path="/work" element={<RenderWithLayout Component={Work} Layout={Layout} page="work" />} />
+                    <Route
+                        path="/music"
+                        element={<RenderWithLayout Component={Music} Layout={Layout} page="music" />}
+                    />
+                    <Route
+                        path="/gallery"
+                        element={<RenderWithLayout Component={Gallery} Layout={Layout} page="gallery" />}
+                    />
+                    <Route
+                        path="/contact"
+                        element={<RenderWithLayout Component={Contact} Layout={Layout} page="contact" />}
+                    />
+                </Routes>
+            </I18nProvider>
         </Suspense>
     );
 };
