@@ -45,7 +45,7 @@ const Header = () => {
     const { headerLinks } = HeaderCopy;
 
     return (
-        <header data-module="header" className="">
+        <header data-module="header" className="header">
             <div className="header__wrapper">
                 <div className="inner-content">
                     <Link to="/" className="name-logo">

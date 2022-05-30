@@ -1,10 +1,8 @@
 import { PageHeader, ImagesGallery } from "modules";
-import { useI18n } from "contexts/I18n";
+import getCopy from "utils/getCopy";
 
 const Gallery = () => {
-    const { i18n } = useI18n();
-    const { language } = i18n;
-    const { GALLERY_COPY } = require(`constants/${language}/containers/gallery`);
+    const GALLERY_COPY = getCopy({ copyKey: "GALLERY_COPY", copyPath: "containers/gallery" });
 
     return (
         <div className="page-wrapper">

@@ -1,10 +1,8 @@
 import { PageHeader, AboutMeBlock } from "modules";
-import { useI18n } from "contexts/I18n";
+import getCopy from "utils/getCopy";
 
 const About = () => {
-    const { i18n } = useI18n();
-    const { language } = i18n;
-    const { ABOUT_COPY } = require(`constants/${language}/containers/about`);
+    const ABOUT_COPY = getCopy({ copyKey: "ABOUT_COPY", copyPath: "containers/about" });
 
     return (
         <div className="page-wrapper">

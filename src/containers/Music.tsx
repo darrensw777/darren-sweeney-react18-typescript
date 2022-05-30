@@ -1,11 +1,9 @@
 import { PageHeader } from "modules";
-import { useI18n } from "contexts/I18n";
+import getCopy from "utils/getCopy";
 import { SoundCloudPlayer } from "modules";
 
 const Music = () => {
-    const { i18n } = useI18n();
-    const { language } = i18n;
-    const { MUSIC_COPY } = require(`constants/${language}/containers/music`);
+    const MUSIC_COPY = getCopy({ copyKey: "MUSIC_COPY", copyPath: "containers/music" });
 
     return (
         <div className="page-wrapper">

@@ -56,8 +56,8 @@ const ContactFormik = ({ CONTACT_COPY }) => {
                             setSubmitting(false);
                         });
                 }}
-                render={({ touched, errors, isSubmitting, handleSubmit, handleReset, values }) => {
-                    console.log("🚀 ~ file: ContactFormik.tsx ~ line 55 ~ ContactFormik ~ values", values);
+            >
+                {({ touched, errors, isSubmitting, handleSubmit, handleReset }) => {
                     return (
                         <>
                             {messageSendStatus && <p className="message-send-status">{messageSendStatus}</p>}
@@ -107,7 +107,7 @@ const ContactFormik = ({ CONTACT_COPY }) => {
                         </>
                     );
                 }}
-            />
+            </Formik>
         </div>
     );
 };

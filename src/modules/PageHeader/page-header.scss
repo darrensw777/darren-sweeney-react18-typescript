@@ -12,10 +12,8 @@
     }
     .sub-title {
         border-left: 8px solid $border-grey;
-
-        h3 {
-            @include regular-font;
-            line-height: 30px;
-        }
+        @include regular-font;
+        line-height: 30px;
+        font-size: $title-font-size;
     }
 }

@@ -1,10 +1,9 @@
-import React from 'react';
-import { companyInfo } from 'utils/config';
+import { companyInfo } from "utils/config";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className="main-content-container">
+        <footer className="footer">
             <div className="inner-content">
                 <div className="copyright">
                     &copy;{currentYear} {companyInfo.name}

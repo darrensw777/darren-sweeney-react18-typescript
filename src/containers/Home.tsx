@@ -1,7 +1,7 @@
 import { PageHeader } from "modules";
 import { HomePageBlock } from "components";
 import navLinksAndStyles from "utils/navLinksAndStyles";
-import { useI18n } from "contexts/I18n";
+import getCopy from "utils/getCopy";
 
 const Sections = navLinksAndStyles
     .filter((item) => item.navBlock)
@@ -19,9 +19,7 @@ const Sections = navLinksAndStyles
     });
 
 const Home = () => {
-    const { i18n } = useI18n();
-    const { language } = i18n;
-    const { HOME_COPY } = require(`constants/${language}/containers/home`);
+    const HOME_COPY = getCopy({ copyKey: "HOME_COPY", copyPath: "containers/home" });
 
     return (
         <div className="page-wrapper">

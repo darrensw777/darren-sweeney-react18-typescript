@@ -13,11 +13,7 @@ const PageHeader = ({ pageTitle }: Props) => {
             <div className="title">
                 <h1>{title}</h1>
             </div>
-            {subTitle && (
-                <div className="sub-title">
-                    <h3>{subTitle}</h3>
-                </div>
-            )}
+            {subTitle && <div className="sub-title">{subTitle}</div>}
         </div>
     );
 };

@@ -1,11 +1,9 @@
 import { PageHeader } from "modules";
-import { useI18n } from "contexts/I18n";
+import getCopy from "utils/getCopy";
 import { CvViewer } from "modules";
 
 const Work = () => {
-    const { i18n } = useI18n();
-    const { language } = i18n;
-    const { WORK_COPY } = require(`constants/${language}/containers/work`);
+    const WORK_COPY = getCopy({ copyKey: "WORK_COPY", copyPath: "containers/work" });
 
     return (
         <div className="page-wrapper">

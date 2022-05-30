@@ -1,11 +1,9 @@
 import { PageHeader } from "modules";
 import { ContactFormik } from "modules";
-import { useI18n } from "contexts/I18n";
+import getCopy from "utils/getCopy";
 
 const Contact = () => {
-    const { i18n } = useI18n();
-    const { language } = i18n;
-    const { CONTACT_COPY } = require(`constants/${language}/containers/contact`);
+    const CONTACT_COPY = getCopy({ copyKey: "CONTACT_COPY", copyPath: "containers/contact" });
 
     return (
         <div className="page-wrapper">
