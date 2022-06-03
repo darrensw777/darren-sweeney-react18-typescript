@@ -1,8 +1,9 @@
-import { createContext, useContext } from "react";
+/* istanbul ignore file */
+import { createContext, useContext } from 'react';
 
 export const i18nObject = {
-    language: "en",
-    locale: "en-GB",
+    language: 'en',
+    locale: 'en-GB',
 };
 
 type I18nInterface = {

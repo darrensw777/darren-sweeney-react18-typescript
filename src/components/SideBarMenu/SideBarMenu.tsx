@@ -1,66 +1,38 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { GetCurrentPage } from "utils/commonUtils";
-import classNames from "classnames";
-import { SideNavBlock } from "components";
-import navLinksAndStyles from "utils/navLinksAndStyles";
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import classNames from 'classnames';
+import { SideBarMenuLinks } from 'components';
+import { SideBarMenuProps } from 'utils/interfaces';
+import { SideBarButtonWrapper } from 'formElements';
 
-interface Props {
-    setMenuOpen(setMenuOpen: boolean): any;
-}
-
-const Links = ({ setMenuOpen }: Props) => {
-    const currentPage = GetCurrentPage();
-
-    return (
-        <>
-            {navLinksAndStyles.map((navItem, idx) => {
-                const isActive = currentPage === navItem.link;
-                return (
-                    <SideNavBlock
-                        key={idx}
-                        backgroundColor={navItem.backgroundColor}
-                        link={navItem.link}
-                        iconClass={navItem.iconClass}
-                        title={navItem.title}
-                        aria-current={isActive}
-                        onClick={() => setMenuOpen(false)}
-                    />
-                );
-            })}
-        </>
-    );
-};
-
-const SideBarMenu = () => {
+const SideBarMenu = ({ navLinksAndStyles }: SideBarMenuProps) => {
     // prettier-ignore
     // Don't actually have to specify here as it's inferred from false
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
-    const containerClasses = classNames("sidebar-menu", menuOpen && "open");
-    const burgerClasses = classNames("btn", "close-menu-icon", menuOpen && "open");
+    const containerClasses = classNames('sidebar-menu', menuOpen && 'open');
+    const burgerClasses = classNames('btn', 'close-menu-icon', menuOpen && 'open');
     useEffect(() => {
-        document.body.classList.toggle("side-menu-open", menuOpen);
+        document.body.classList.toggle('side-menu-open', menuOpen);
     }, [menuOpen]);
     return (
-        <div className={"sidebar-container"}>
-            <button
+        <div className="sidebar-container">
+            <SideBarButtonWrapper
                 id="burger-menu"
-                className={burgerClasses}
-                onClick={() => {
-                    setMenuOpen(!menuOpen);
-                }}
+                burgerClasses={burgerClasses}
+                setMenuOpen={setMenuOpen}
+                menuOpen={menuOpen}
             >
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-            </button>
-            <div className={containerClasses}>
+            </SideBarButtonWrapper>
+            <div className={containerClasses} id="sideBarMenu">
                 <Link to="/" className="name-logo">
                     Darren Sweeney
                 </Link>
                 <div className="nav-block-container">
-                    <Links setMenuOpen={setMenuOpen} />
+                    <SideBarMenuLinks setMenuOpen={setMenuOpen} navLinksAndStyles={navLinksAndStyles} />
                 </div>
             </div>
         </div>

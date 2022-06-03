@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBarMenu component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="sidebar-container"
+  >
+    <button
+      class="btn close-menu-icon"
+      id="burger-menu"
+    >
+      <span />
+      <span />
+      <span />
+      <span />
+    </button>
+    <div
+      class="sidebar-menu"
+      id="sideBarMenu"
+    >
+      <a
+        class="name-logo"
+        href="/"
+      >
+        Darren Sweeney
+      </a>
+      <div
+        class="nav-block-container"
+      >
+        <div
+          class="side-nav-block"
+        >
+          <a
+            aria-label="Home"
+            class="link"
+            href="/"
+            role="navigation"
+          >
+            <div
+              class="icon"
+            >
+              <i
+                aria-hidden="true"
+                class="fa fa-home"
+              />
+            </div>
+            <div
+              class="link"
+            >
+              Home
+            </div>
+          </a>
+        </div>
+        <div
+          class="side-nav-block"
+        >
+          <a
+            aria-label="link"
+            class="link"
+            href="/link"
+            role="navigation"
+          >
+            <div
+              class="icon"
+            >
+              <i
+                aria-hidden="true"
+                class="fa fa-link"
+              />
+            </div>
+            <div
+              class="link"
+            >
+              link
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

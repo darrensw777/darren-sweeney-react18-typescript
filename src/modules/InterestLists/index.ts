@@ -1,1 +1,2 @@
-export { default } from "./InterestLists";
+/* istanbul ignore file */
+export { default } from './InterestLists';

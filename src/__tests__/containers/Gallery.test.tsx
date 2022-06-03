@@ -1,20 +1,21 @@
-import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import { Gallery } from "containers";
+import { Gallery } from 'containers';
+import testSetUp from 'utils/testSetUp';
 
-describe("Gallery container", () => {
+describe('Gallery container', () => {
+    let container: any, getByRole: any;
     beforeEach(() => {
-        render(<Gallery />, { wrapper: MemoryRouter });
+        ({ container, getByRole } = testSetUp({
+            Component: <Gallery />,
+        }));
     });
 
-    test("renders the page title", () => {
-        const headerTitle = screen.getByRole("heading", { level: 1 });
+    test('renders the page title', () => {
+        const headerTitle = getByRole('heading', { level: 1 });
         expect(headerTitle).toBeInTheDocument();
     });
 
-    test("renders the page description", () => {
-        const { container } = render(<Gallery />, { wrapper: MemoryRouter });
-        const subtitleElement = container.querySelectorAll(".sub-title");
+    test('renders the page description', () => {
+        const subtitleElement = container.querySelectorAll('.sub-title');
         expect(subtitleElement.length).toBe(1);
     });
 });

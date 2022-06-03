@@ -1,24 +1,24 @@
-import { useState, useReducer, useContext } from "react";
-import { Link } from "react-router-dom";
-import { I18nContext } from "utils/context";
+import { useState, useReducer, useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { I18nContext } from 'utils/context';
 
-const cvPages = ["dsCV1.webp", "dsCV2.webp", "dsCV3.webp", "dsCV4.webp"];
+const cvPages = ['dsCV1.webp', 'dsCV2.webp', 'dsCV3.webp', 'dsCV4.webp'];
 
 const initialState = { pageNumber: 1 };
 
-type State = {
-    pageNumber: number,
-};
+interface State {
+    pageNumber: number;
+}
 
-type Action = {
-    type: string,
-};
+interface Action {
+    type: string;
+}
 
 const counterReducer = (state: State, action: Action) => {
     switch (action.type) {
-        case "INCREMENT":
+        case 'INCREMENT':
             return { pageNumber: state.pageNumber + 1 };
-        case "DECREMENT":
+        case 'DECREMENT':
             return { pageNumber: state.pageNumber - 1 };
         default:
             throw new Error();
@@ -36,11 +36,11 @@ const CvViewer = () => {
     const { DOWNLOAD, CONTACT, PAGE, OF, NEXT, PREVIOUS } = CV_VIEWER;
 
     const handleIncrement = () => {
-        dispatch({ type: "INCREMENT" });
+        dispatch({ type: 'INCREMENT' });
     };
 
     const handleDecrement = () => {
-        dispatch({ type: "DECREMENT" });
+        dispatch({ type: 'DECREMENT' });
     };
 
     const smoothScrollToTop = () => {
@@ -48,7 +48,7 @@ const CvViewer = () => {
             () =>
                 window.scrollTo({
                     top: 0,
-                    behavior: "smooth",
+                    behavior: 'smooth',
                 }),
             200
         );
@@ -80,14 +80,20 @@ const CvViewer = () => {
             </div>
 
             <div className="pagination">
-                <p>
-                    {PAGE} {state.pageNumber || (numPages ? 1 : "--")} {OF} {numPages || "--"}
+                <p data-testid="pageNumberCopy">
+                    {PAGE} {state.pageNumber || (numPages ? 1 : '--')} {OF} {numPages || '--'}
                 </p>
                 <div className="buttons">
-                    <button type="button" disabled={stopPrev} onClick={previousPage} className="btn">
+                    <button
+                        type="button"
+                        disabled={stopPrev}
+                        onClick={previousPage}
+                        className="btn"
+                        data-testid="previousPage"
+                    >
                         {PREVIOUS}
                     </button>
-                    <button type="button" disabled={stopNext} onClick={nextPage} className="btn">
+                    <button type="button" disabled={stopNext} onClick={nextPage} className="btn" data-testid="nextPage">
                         {NEXT}
                     </button>
                 </div>

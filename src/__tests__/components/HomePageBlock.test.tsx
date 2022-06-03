@@ -1,6 +1,6 @@
-import { render, waitFor } from '@testing-library/react';
-import { MemoryRouter } from 'react-router-dom';
+import { waitFor } from '@testing-library/react';
 import { HomePageBlock } from 'components';
+import testSetUp from 'utils/testSetUp';
 
 describe('HomePageBlock component', () => {
     const componentProps = {
@@ -11,42 +11,35 @@ describe('HomePageBlock component', () => {
         backgroundColor: 'red',
     };
 
-    const setUp = () => {
-        const { container, getByText, getByRole, asFragment } = render(<HomePageBlock {...componentProps} />, {
-            wrapper: MemoryRouter,
-        });
-        return {
-            container,
-            getByText,
-            getByRole,
-            asFragment,
-        };
-    };
+    let getByText: any, asFragment: any, container: any, getByRole: any;
+    beforeEach(() => {
+        ({ asFragment, getByText, container, getByRole } = testSetUp({ Component: <HomePageBlock {...componentProps} /> }));
+    });
 
-    it('matches snapshot', () => {
-        expect(setUp().asFragment()).toMatchSnapshot();
+    test('matches snapshot', () => {
+        expect(asFragment()).toMatchSnapshot();
     });
 
     test('renders the block', () => {
-        const blocks = setUp().container.getElementsByClassName('homepage-block');
+        const blocks = container.getElementsByClassName('homepage-block');
         expect(blocks.length).toBe(1);
     });
 
     test('renders the correct link', () => {
-        expect(setUp().getByRole('link')).toHaveAttribute('href', componentProps.link);
+        expect(getByRole('link')).toHaveAttribute('href', componentProps.link);
     });
 
     test('renders the correct title', () => {
-        expect(setUp().getByText(/myTitle/i)).toHaveTextContent('myTitle');
+        expect(getByText(/myTitle/i)).toHaveTextContent('myTitle');
     });
 
     test('renders the block', () => {
-        const blocks = setUp().container.getElementsByClassName('homepage-block');
+        const blocks = container.getElementsByClassName('homepage-block');
         expect(blocks.length).toBe(1);
     });
 
     test('renders the correct image path', async () => {
-        const image = setUp().getByRole('img') as HTMLImageElement;
+        const image = getByRole('img') as HTMLImageElement;
         await waitFor(() => expect(image.src === '/image/path'));
     });
 });

@@ -1,0 +1,9 @@
+.social__outer {
+    border-top: 1px solid $border-grey;
+    .social__container {
+        display: inline-flex;
+        .react-share__ShareButton {
+            margin-right: 10px;
+        }
+    }
+}

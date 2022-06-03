@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
 interface Props {
-    link: string; 
-    iconClass: string; 
-    title: string; 
-    backgroundColor: string; 
+    link: string;
+    iconClass: string;
+    title: string;
+    backgroundColor: string;
     onClick: any;
 }
 
@@ -18,20 +18,11 @@ const SideNavBlock = ({ link, iconClass, title, backgroundColor, onClick }: Prop
                 background: bgColor,
             }}
         >
-            <Link to={link} className="link" onClick={onClick}>
-                <div>
-                    {/* <div className="card-image">
-                        <img
-                            src={homeImagePath}
-                            className="img-responsive"
-                            alt=""
-                        />
-                    </div> */}
-                    <div className="icon">
-                        <i className={iconClass} aria-hidden="true" />
-                    </div>
-                    <div className="link">{title}</div>
+            <Link to={link} className="link" onClick={onClick} role="navigation" aria-label={title}>
+                <div className="icon">
+                    <i className={iconClass} aria-hidden="true" />
                 </div>
+                <div className="link">{title}</div>
             </Link>
         </div>
     );

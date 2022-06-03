@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideNavBlock component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="side-nav-block"
+  >
+    <a
+      aria-label="Home"
+      class="link"
+      href="/"
+      role="navigation"
+    >
+      <div
+        class="icon"
+      >
+        <i
+          aria-hidden="true"
+          class="fa fa-home"
+        />
+      </div>
+      <div
+        class="link"
+      >
+        Home
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;

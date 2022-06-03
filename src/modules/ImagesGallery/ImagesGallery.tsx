@@ -1,16 +1,22 @@
-// @ts-nocheck
-import galleryImages from "utils/galleryImages";
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
+import ImageGallery from 'react-image-gallery';
+import 'react-image-gallery/styles/css/image-gallery.css';
 
-const galleries = () => {
+interface ImageObject {
+    original: string;
+    thumbnail: string;
+}
+interface ImagesGalleryProps {
+    galleryImages: ImageObject[][];
+}
+
+const galleries = ({ galleryImages }: ImagesGalleryProps) => {
     return galleryImages.map((imgArray, idx) => (
         <ImageGallery items={imgArray} slideInterval={2000} lazyLoad={true} key={idx} />
     ));
 };
 
-const ImagesGallery = () => {
-    const imageGallery = galleries();
+const ImagesGallery = ({ galleryImages }: ImagesGalleryProps) => {
+    const imageGallery = galleries({ galleryImages });
     return <div className="images-gallery">{imageGallery}</div>;
 };
 

@@ -1,6 +1,6 @@
-import { aboutGreeting } from "utils/commonUtils";
-import { InterestLists } from "modules";
-import { CopyPropsParent } from "utils/interfaces";
+import { aboutGreeting } from 'utils/commonUtils';
+import { InterestLists } from 'modules';
+import { CopyPropsParent } from 'utils/interfaces';
 
 const AboutMeBlock = ({ copy }: CopyPropsParent) => {
     const { general, interests, greetings } = copy;

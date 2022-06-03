@@ -1,12 +1,8 @@
+import { PageObject } from 'utils/interfaces'
+
 /**
  * Doesn't need slash on canonicals
  */
-
-interface PageObject {
-    docTitle: string;
-    canonical: string;
-    description: string;
-}
 
 const meta: Record<string, any> = {
     home: <PageObject> {

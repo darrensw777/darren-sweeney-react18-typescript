@@ -1,0 +1,477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImagesGallery module matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="images-gallery"
+  >
+    <div
+      aria-live="polite"
+      class="image-gallery"
+    >
+      <div
+        class="image-gallery-content bottom"
+      >
+        <div
+          class="image-gallery-slide-wrapper bottom"
+        >
+          <button
+            aria-label="Previous Slide"
+            class="image-gallery-icon image-gallery-left-nav"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="6 0 12 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="15 18 9 12 15 6"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Next Slide"
+            class="image-gallery-icon image-gallery-right-nav"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="6 0 12 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="9 18 15 12 9 6"
+              />
+            </svg>
+          </button>
+          <div
+            class="image-gallery-swipe"
+          >
+            <div
+              class="image-gallery-slides"
+            >
+              <div
+                aria-label="Go to Slide 1"
+                class="image-gallery-slide  center "
+                role="button"
+                style="display: inherit; transform: translate3d(0%, 0, 0);"
+                tabindex="-1"
+              >
+                <img
+                  alt=""
+                  class="image-gallery-image"
+                  height=""
+                  loading="eager"
+                  sizes=""
+                  src="/img/gallery/kay1.webp"
+                  srcset=""
+                  title=""
+                  width=""
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 2"
+                class="image-gallery-slide  right "
+                role="button"
+                style="display: inherit; transform: translate3d(100%, 0, 0);"
+                tabindex="-1"
+              >
+                <img
+                  alt=""
+                  class="image-gallery-image"
+                  height=""
+                  loading="eager"
+                  sizes=""
+                  src="/img/gallery/kay2.webp"
+                  srcset=""
+                  title=""
+                  width=""
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 3"
+                class="image-gallery-slide  "
+                role="button"
+                style="display: inherit; transform: translate3d(200%, 0, 0);"
+                tabindex="-1"
+              >
+                <div
+                  style="height: 100%;"
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 4"
+                class="image-gallery-slide  left "
+                role="button"
+                style="display: inherit; transform: translate3d(-100%, 0, 0);"
+                tabindex="-1"
+              >
+                <img
+                  alt=""
+                  class="image-gallery-image"
+                  height=""
+                  loading="eager"
+                  sizes=""
+                  src="/img/gallery/kay4.webp"
+                  srcset=""
+                  title=""
+                  width=""
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="Play or Pause Slideshow"
+            class="image-gallery-icon image-gallery-play-button"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polygon
+                points="5 3 19 12 5 21 5 3"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Open Fullscreen"
+            class="image-gallery-icon image-gallery-fullscreen-button"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="image-gallery-thumbnails-wrapper bottom thumbnails-swipe-horizontal"
+        >
+          <div
+            class="image-gallery-thumbnails"
+          >
+            <nav
+              aria-label="Thumbnail Navigation"
+              class="image-gallery-thumbnails-container"
+              style="transform: translate3d(0px, 0, 0); transition: all 450ms ease-out;"
+            >
+              <button
+                aria-label="Go to Slide 1"
+                aria-pressed="true"
+                class="image-gallery-thumbnail active"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="image-gallery-thumbnail-inner"
+                >
+                  <img
+                    class="image-gallery-thumbnail-image"
+                    src="/img/gallery/thumbs/kay1_tn.jpg"
+                  />
+                </span>
+              </button>
+              <button
+                aria-label="Go to Slide 2"
+                aria-pressed="false"
+                class="image-gallery-thumbnail"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="image-gallery-thumbnail-inner"
+                >
+                  <img
+                    class="image-gallery-thumbnail-image"
+                    src="/img/gallery/thumbs/kay2_tn.jpg"
+                  />
+                </span>
+              </button>
+              <button
+                aria-label="Go to Slide 3"
+                aria-pressed="false"
+                class="image-gallery-thumbnail"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="image-gallery-thumbnail-inner"
+                >
+                  <img
+                    class="image-gallery-thumbnail-image"
+                    src="/img/gallery/thumbs/kay3_tn.jpg"
+                  />
+                </span>
+              </button>
+              <button
+                aria-label="Go to Slide 4"
+                aria-pressed="false"
+                class="image-gallery-thumbnail"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="image-gallery-thumbnail-inner"
+                >
+                  <img
+                    class="image-gallery-thumbnail-image"
+                    src="/img/gallery/thumbs/kay4_tn.jpg"
+                  />
+                </span>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-live="polite"
+      class="image-gallery"
+    >
+      <div
+        class="image-gallery-content bottom"
+      >
+        <div
+          class="image-gallery-slide-wrapper bottom"
+        >
+          <button
+            aria-label="Previous Slide"
+            class="image-gallery-icon image-gallery-left-nav"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="6 0 12 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="15 18 9 12 15 6"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Next Slide"
+            class="image-gallery-icon image-gallery-right-nav"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              viewBox="6 0 12 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polyline
+                points="9 18 15 12 9 6"
+              />
+            </svg>
+          </button>
+          <div
+            class="image-gallery-swipe"
+          >
+            <div
+              class="image-gallery-slides"
+            >
+              <div
+                aria-label="Go to Slide 1"
+                class="image-gallery-slide  center "
+                role="button"
+                style="display: inherit; transform: translate3d(0%, 0, 0);"
+                tabindex="-1"
+              >
+                <img
+                  alt=""
+                  class="image-gallery-image"
+                  height=""
+                  loading="eager"
+                  sizes=""
+                  src="/img/gallery/misc1.webp"
+                  srcset=""
+                  title=""
+                  width=""
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 2"
+                class="image-gallery-slide  right "
+                role="button"
+                style="display: inherit; transform: translate3d(100%, 0, 0);"
+                tabindex="-1"
+              >
+                <img
+                  alt=""
+                  class="image-gallery-image"
+                  height=""
+                  loading="eager"
+                  sizes=""
+                  src="/img/gallery/misc2.webp"
+                  srcset=""
+                  title=""
+                  width=""
+                />
+              </div>
+              <div
+                aria-label="Go to Slide 3"
+                class="image-gallery-slide  left "
+                role="button"
+                style="display: inherit; transform: translate3d(-100%, 0, 0);"
+                tabindex="-1"
+              >
+                <img
+                  alt=""
+                  class="image-gallery-image"
+                  height=""
+                  loading="eager"
+                  sizes=""
+                  src="/img/gallery/misc3.webp"
+                  srcset=""
+                  title=""
+                  width=""
+                />
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="Play or Pause Slideshow"
+            class="image-gallery-icon image-gallery-play-button"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polygon
+                points="5 3 19 12 5 21 5 3"
+              />
+            </svg>
+          </button>
+          <button
+            aria-label="Open Fullscreen"
+            class="image-gallery-icon image-gallery-fullscreen-button"
+            type="button"
+          >
+            <svg
+              class="image-gallery-svg"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="image-gallery-thumbnails-wrapper bottom thumbnails-swipe-horizontal"
+        >
+          <div
+            class="image-gallery-thumbnails"
+          >
+            <nav
+              aria-label="Thumbnail Navigation"
+              class="image-gallery-thumbnails-container"
+              style="transform: translate3d(0px, 0, 0); transition: all 450ms ease-out;"
+            >
+              <button
+                aria-label="Go to Slide 1"
+                aria-pressed="true"
+                class="image-gallery-thumbnail active"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="image-gallery-thumbnail-inner"
+                >
+                  <img
+                    class="image-gallery-thumbnail-image"
+                    src="/img/gallery/thumbs/misc1_tn.jpg"
+                  />
+                </span>
+              </button>
+              <button
+                aria-label="Go to Slide 2"
+                aria-pressed="false"
+                class="image-gallery-thumbnail"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="image-gallery-thumbnail-inner"
+                >
+                  <img
+                    class="image-gallery-thumbnail-image"
+                    src="/img/gallery/thumbs/misc2_tn.jpg"
+                  />
+                </span>
+              </button>
+              <button
+                aria-label="Go to Slide 3"
+                aria-pressed="false"
+                class="image-gallery-thumbnail"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="image-gallery-thumbnail-inner"
+                >
+                  <img
+                    class="image-gallery-thumbnail-image"
+                    src="/img/gallery/thumbs/misc3_tn.jpg"
+                  />
+                </span>
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

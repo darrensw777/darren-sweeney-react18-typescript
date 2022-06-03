@@ -1,10 +1,8 @@
 import { ReactNode, useState } from "react";
-const soundcloudIds = [
-    1252449361, 246065520, 1252463959, 125995697, 194736534, 125991618, 125986629, 1252459903, 123501678, 111229116,
-    108824073,
-];
 
-const SoundCloudMusic = () => {
+interface SoundCloudPlayerProps {soundcloudIds:number[]}
+
+const SoundCloudMusic = ({soundcloudIds}:SoundCloudPlayerProps) => {
     // prettier-ignore
     const [iframes, setIframes] = useState<ReactNode[]>([]);
 
@@ -17,6 +15,7 @@ const SoundCloudMusic = () => {
                     height="166"
                     scrolling="no"
                     frameBorder="no"
+                    className="player"
                     src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${id}&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true&show_teaser=false`}
                 ></iframe>
             ));
@@ -25,10 +24,10 @@ const SoundCloudMusic = () => {
     return <>{iframes}</>;
 };
 
-const SoundCloudPlayer = () => {
+const SoundCloudPlayer = ({soundcloudIds}:SoundCloudPlayerProps) => {
     return (
         <div className="inner-content soundcloud-player">
-            <SoundCloudMusic />
+            <SoundCloudMusic soundcloudIds={soundcloudIds} />
         </div>
     );
 };

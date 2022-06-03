@@ -1,17 +1,18 @@
-import { Suspense, lazy, useLayoutEffect, ReactNode, ReactElement } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
-import Layout from "layouts";
-import Helmet from "react-helmet";
-import meta from "utils/seo";
-import { companyInfo } from "utils/config";
-import { I18nProvider } from "contexts/I18nProvider";
+/* istanbul ignore file */
+import { Suspense, lazy, useLayoutEffect, ReactNode, ReactElement } from 'react';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import Layout from 'layouts';
+import Helmet from 'react-helmet';
+import meta from 'utils/seo';
+import { companyInfo } from 'utils/config';
+import { I18nProvider } from 'contexts/I18nProvider';
 
-const Home = lazy(() => import("containers/Home"));
-const About = lazy(() => import("containers/About"));
-const Work = lazy(() => import("containers/Work"));
-const Music = lazy(() => import("containers/Music"));
-const Contact = lazy(() => import("containers/Contact"));
-const Gallery = lazy(() => import("containers/Gallery"));
+const Home = lazy(() => import('containers/Home'));
+const About = lazy(() => import('containers/About'));
+const Work = lazy(() => import('containers/Work'));
+const Music = lazy(() => import('containers/Music'));
+const Contact = lazy(() => import('containers/Contact'));
+const Gallery = lazy(() => import('containers/Gallery'));
 
 const ScrollToTop = ({ children }: { children: ReactNode }): ReactElement => {
     const location = useLocation();
@@ -28,7 +29,7 @@ interface Props {
     page: string;
 }
 
-const RenderWithLayout = ({ Component, Layout, props, page = "" }: Props) => {
+const RenderWithLayout = ({ Component, Layout, props, page = '' }: Props) => {
     const { siteUrl, docTitlePrefix } = companyInfo;
     const pageMeta = meta[page];
 

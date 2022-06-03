@@ -1,8 +1,9 @@
 // @ts-nocheck
 
-import { useState } from "react";
-import { Formik, Field } from "formik";
-import contactFormValidation from "validation/contactForm";
+import { useState } from 'react';
+import { Formik, Field } from 'formik';
+import contactFormValidation from 'validation/contactForm';
+import { InputField } from 'formElements';
 
 interface MessageProps {
     name: string;
@@ -17,8 +18,8 @@ interface EncodeProps {
 
 const encode = (data: EncodeProps) => {
     return Object.keys(data)
-        .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
+        .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&');
 };
 
 const ContactFormik = ({ CONTACT_COPY }) => {
@@ -33,16 +34,16 @@ const ContactFormik = ({ CONTACT_COPY }) => {
     return (
         <div className="form-wrapper">
             <Formik
-                initialValues={{ name: "", email: "", message: "" }}
+                initialValues={{ name: '', email: '', message: '' }}
                 validationSchema={contactFormValidation({ error: validationErrorMessages })}
                 onSubmit={(values, { setSubmitting, resetForm }) => {
-                    fetch("/", {
-                        method: "POST",
+                    fetch('/', {
+                        method: 'POST',
                         headers: {
-                            "Content-Type": "application/x-www-form-urlencoded",
+                            'Content-Type': 'application/x-www-form-urlencoded',
                         },
                         body: encode({
-                            "form-name": "contactForm",
+                            'form-name': 'contactForm',
                             ...values,
                         }),
                     })
@@ -71,27 +72,29 @@ const ContactFormik = ({ CONTACT_COPY }) => {
                             >
                                 <input name="bot-field" hidden />
                                 <p className="helper">{allFieldsRequired}</p>
-                                <div className="field">
-                                    <label htmlFor="name" className="label">
-                                        {name}
-                                    </label>
-                                    <Field className="input-text" type="text" name="name" />
-                                    {touched.name && errors.name && <p className="danger">{errors.name}</p>}
-                                </div>
-                                <div className="field">
-                                    <label htmlFor="email" className="label">
-                                        {email}
-                                    </label>
-                                    <Field className="input-text" type="text" name="email" />
-                                    {touched.email && errors.email && <p className="danger">{errors.email}</p>}
-                                </div>
-                                <div className="field">
-                                    <label htmlFor="message" className="label">
-                                        {message}
-                                    </label>
-                                    <Field className="input-textarea" name="message" component="textarea" rows="6" />
-                                    {touched.message && errors.message && <p className="danger">{errors.message}</p>}
-                                </div>
+                                <InputField
+                                    fieldName={name}
+                                    touched={touched}
+                                    errors={errors}
+                                    className="input-text"
+                                    id="name"
+                                />
+                                <InputField
+                                    fieldName={name}
+                                    touched={touched}
+                                    errors={errors}
+                                    className="input-text"
+                                    id="email"
+                                />
+                                <InputField
+                                    fieldName={message}
+                                    touched={touched}
+                                    errors={errors}
+                                    className="input-textarea"
+                                    id="message"
+                                    component="textarea"
+                                    rows="6"
+                                />
                                 <div className="buttons">
                                     <input
                                         id="contactFormSubmit"

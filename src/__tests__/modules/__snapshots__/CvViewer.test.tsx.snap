@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CvViewer container matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="cv-viewer"
+  >
+    <div
+      class="links"
+    >
+      <a
+        class="download-pdf"
+        href="/pdf/DarrenSweeney4.0.pdf"
+        target="_blank"
+      >
+        Click here to download a PDF of my CV
+      </a>
+      <a
+        href="/contact"
+      >
+        Contact me
+      </a>
+    </div>
+    <div
+      class="cv-page-container"
+    >
+      <img
+        alt="CV page number 2"
+        src="/img/cv/ds1.webp"
+      />
+    </div>
+    <div
+      class="pagination"
+    >
+      <p
+        data-testid="pageNumberCopy"
+      >
+        Page 1 of 4
+      </p>
+      <div
+        class="buttons"
+      >
+        <button
+          class="btn"
+          data-testid="previousPage"
+          disabled=""
+          type="button"
+        >
+          Previous
+        </button>
+        <button
+          class="btn"
+          data-testid="nextPage"
+          type="button"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

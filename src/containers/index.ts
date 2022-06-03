@@ -1,3 +1,4 @@
+/* istanbul ignore file */
 /*
  * Exporting all the components from the components folder,
  * components can be imported as the example below:

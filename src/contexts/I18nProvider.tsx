@@ -1,5 +1,6 @@
-import { useState, ReactNode } from "react";
-import { I18nContext, i18nObject } from "contexts/I18n";
+/* istanbul ignore file */
+import { useState, ReactNode } from 'react';
+import { I18nContext, i18nObject } from 'contexts/I18n';
 
 export const I18nProvider = ({ children }: { children: ReactNode }) => {
     // prettier-ignore

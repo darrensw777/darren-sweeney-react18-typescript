@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutMeBlock container matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="about-me"
+  >
+    <div
+      class="profile-image"
+    >
+      <img
+        alt="C'est moi!"
+        src="/img/gallery/darren.webp"
+      />
+    </div>
+    <h2 />
+    <p>
+      hello
+    </p>
+    <p>
+      world
+    </p>
+    <h3>
+      Interests
+    </h3>
+    <div
+      class="question-container"
+    >
+      <div
+        class="question-container__question"
+      >
+        string:
+      </div>
+      <div
+        class="question-container__answers"
+      >
+        <ul>
+          <li>
+            answer1
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

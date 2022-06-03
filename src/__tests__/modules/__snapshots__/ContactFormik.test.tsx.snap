@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactFormik container matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="form-wrapper"
+  >
+    <form
+      class="form"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      name="contactForm"
+    >
+      <input
+        hidden=""
+        name="bot-field"
+      />
+      <p
+        class="helper"
+      >
+        All fields are required
+      </p>
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+          for="name"
+        >
+          Name:
+        </label>
+        <input
+          class="input-text"
+          id="name"
+          name="name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+          for="name"
+        >
+          Name:
+        </label>
+        <input
+          class="input-text"
+          id="email"
+          name="email"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="field"
+      >
+        <label
+          class="label"
+          for="name"
+        >
+          Message:
+        </label>
+        <textarea
+          class="input-textarea"
+          id="message"
+          name="message"
+          rows="6"
+          type="text"
+        />
+      </div>
+      <div
+        class="buttons"
+      >
+        <input
+          class="btn btn-primary"
+          id="contactFormSubmit"
+          name="submit"
+          type="submit"
+          value="Send Message"
+        />
+        <input
+          class="btn hollow"
+          type="reset"
+          value="Clear"
+        />
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;

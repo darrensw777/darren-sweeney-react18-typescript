@@ -1,7 +1,7 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
-import { GetCurrentPage } from "utils/commonUtils";
-import { I18nContext } from "utils/context";
+import { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { GetCurrentPage } from 'utils/commonUtils';
+import { I18nContext } from 'utils/context';
 
 interface HeaderLinks {
     active: boolean;
@@ -48,7 +48,7 @@ const Header = () => {
         <header data-module="header" className="header">
             <div className="header__wrapper">
                 <div className="inner-content">
-                    <Link to="/" className="name-logo">
+                    <Link to="/" className="name-logo" role="navigation">
                         Darren Sweeney
                     </Link>
                     <ul className="header-nav">

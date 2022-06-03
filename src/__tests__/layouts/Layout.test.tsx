@@ -1,36 +1,25 @@
-import { render } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
-import Layout from "layouts";
+import Layout from 'layouts';
+import testSetUp from 'utils/testSetUp';
 
-describe("Home container", () => {
+describe('Home container', () => {
+    let container: any;
     beforeEach(() => {
-        render(
-            <Layout>
-                <></>
-            </Layout>,
-            { wrapper: MemoryRouter }
-        );
+        ({ container } = testSetUp({
+            Component: (
+                <Layout>
+                    <></>
+                </Layout>
+            ),
+        }));
     });
 
-    test("renders the header", () => {
-        const { container } = render(
-            <Layout>
-                <></>
-            </Layout>,
-            { wrapper: MemoryRouter }
-        );
-        const headerElement = container.querySelectorAll(".header");
+    test('renders the header', () => {
+        const headerElement = container.querySelectorAll('.header');
         expect(headerElement.length).toBe(1);
     });
 
-    test("renders the footer", () => {
-        const { container } = render(
-            <Layout>
-                <></>
-            </Layout>,
-            { wrapper: MemoryRouter }
-        );
-        const footerElement = container.querySelectorAll(".footer");
+    test('renders the footer', () => {
+        const footerElement = container.querySelectorAll('.footer');
         expect(footerElement.length).toBe(1);
     });
 });

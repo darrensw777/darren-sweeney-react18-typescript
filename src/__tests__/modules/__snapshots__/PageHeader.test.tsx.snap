@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader module matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="page-header"
+  >
+    <div
+      class="title"
+    >
+      <h1>
+        title
+      </h1>
+    </div>
+    <div
+      class="sub-title"
+    >
+      subTitle
+    </div>
+  </div>
+</DocumentFragment>
+`;

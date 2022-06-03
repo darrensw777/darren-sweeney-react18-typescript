@@ -1,4 +1,5 @@
-import * as Yup from "yup";
+/* istanbul ignore file */
+import * as Yup from 'yup';
 
 const contactFormValidation = ({ error }) => {
     const { nameTooShort, nameTooLong, nameRequired, emailInvalid, emailRequired, messageRequired } = error;

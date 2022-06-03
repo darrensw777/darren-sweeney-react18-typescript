@@ -1,25 +1,17 @@
-import { useLocation } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+import { GreetingCopyProps } from 'utils/interfaces';
 
 export const GetCurrentPage = () => {
     let location = useLocation();
 
-    return location.pathname;
+    return location.pathname || null;
 };
 
 export const capitalizeFirstLetter = (string: string) => string.charAt(0).toUpperCase() + string.slice(1);
 
-interface Copy {
-    morning?: string;
-    evening?: string;
-    afternoon?: string;
-}
-interface CopyProps {
-    copy: Copy;
-}
-
-export const aboutGreeting = ({ copy }: CopyProps) => {
+export const aboutGreeting = ({ copy, testTimeInHours = null }: GreetingCopyProps) => {
     const d = new Date();
-    const timeInHours = d.getHours();
+    const timeInHours = testTimeInHours || d.getHours();
 
     const { morning, evening, afternoon } = copy;
 
@@ -29,7 +21,7 @@ export const aboutGreeting = ({ copy }: CopyProps) => {
     if (timeInHours > 18) {
         return evening;
     }
-    if (timeInHours > 12) {
+    if (timeInHours >= 12) {
         return afternoon;
     }
 };

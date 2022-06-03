@@ -1,18 +1,16 @@
-import { ReactNode, ReactElement } from "react";
-import { Header, Footer } from "modules";
-import { SideBarMenu } from "components";
-import "./Layout.scss";
+import { ReactElement } from 'react';
+import { Header, Footer } from 'modules';
+import { SideBarMenu } from 'components';
+import navLinksAndStyles from 'utils/navLinksAndStyles';
+import { ChildrenProps } from 'utils/interfaces';
+import './Layout.scss';
 
-interface Props {
-    children: ReactNode;
-}
-
-const Layout = ({ children }: Props): ReactElement => {
+const Layout = ({ children }: ChildrenProps): ReactElement => {
     return (
         /* This ID is required for the side menu */
-        <div id="outerContainer">
-            <SideBarMenu />
-            <main className="main-content-container" id="pageWrap">
+        <div id='outerContainer'>
+            <SideBarMenu navLinksAndStyles={navLinksAndStyles} />
+            <main className='main-content-container' id='pageWrap'>
                 <Header />
                 {children}
                 <Footer />
