@@ -47,5 +47,11 @@
     "@types/react-helmet": "^6.1.5",
     "@types/react-image-gallery": "^1.0.5",
     "prettier": "2.6.2"
+  },
+  "overrides": {
+    "react-share": {
+      "react": "18.0.0",
+      "react-dom": "18.0.0"
+    }
   }
 }
