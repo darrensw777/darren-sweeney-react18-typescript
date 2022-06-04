@@ -13,12 +13,7 @@ exports[`SideBarMenuLinks component matches snapshot 1`] = `
     >
       <div
         class="icon"
-      >
-        <i
-          aria-hidden="true"
-          class="fa fa-home"
-        />
-      </div>
+      />
       <div
         class="link"
       >
@@ -37,12 +32,7 @@ exports[`SideBarMenuLinks component matches snapshot 1`] = `
     >
       <div
         class="icon"
-      >
-        <i
-          aria-hidden="true"
-          class="fa fa-link"
-        />
-      </div>
+      />
       <div
         class="link"
       >

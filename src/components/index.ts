@@ -9,3 +9,4 @@ export { default as SideBarMenu } from './SideBarMenu';
 export { default as HomePageBlock } from './HomePageBlock';
 export { default as SideNavBlock } from './SideNavBlock';
 export { default as SideBarMenuLinks } from './SideBarMenuLinks';
+export { default as CvPagination } from './CvPagination';

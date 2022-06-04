@@ -22,10 +22,6 @@ exports[`HomePageBlock component matches snapshot 1`] = `
         <div
           class="link-holder"
         >
-          <i
-            aria-hidden="true"
-            class="icon-class"
-          />
           myTitle
         </div>
       </div>

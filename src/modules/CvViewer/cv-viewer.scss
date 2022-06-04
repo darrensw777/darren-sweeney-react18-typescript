@@ -31,29 +31,4 @@ $breakpoint: 676px;
             width: 100%;
         }
     }
-
-    .pagination {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        @include margin-bottom;
-
-        p {
-            text-align: center;
-        }
-
-        .buttons {
-            display: flex;
-            flex-basis: 100%;
-            justify-content: center;
-
-            button {
-                background: transparent;
-                @include header-font;
-                border: none;
-                cursor: pointer;
-                font-size: $xl-font-size;
-            }
-        }
-    }
 }

@@ -1,6 +1,7 @@
-import { useState, useReducer, useContext } from 'react';
+import { useReducer, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { I18nContext } from 'utils/context';
+import { CvPagination } from 'components';
+import getCopy from "utils/getCopy";
 
 const cvPages = ['dsCV1.webp', 'dsCV2.webp', 'dsCV3.webp', 'dsCV4.webp'];
 
@@ -26,46 +27,10 @@ const counterReducer = (state: State, action: Action) => {
 };
 
 const CvViewer = () => {
-    const [numPages] = useState(cvPages.length);
-    const [state, dispatch] = useReducer(counterReducer, initialState);
+    const [pageState, setPageState] = useState({ pageNumber: 1 })
+    const CV_VIEWER = getCopy({ copyKey: "CV_VIEWER", copyPath: "modules/CV_VIEWER.js" });
 
-    const i18nDerived = useContext(I18nContext);
-    const { language } = i18nDerived;
-    const { CV_VIEWER } = require(`constants/${language}/modules/CV_VIEWER.js`);
-
-    const { DOWNLOAD, CONTACT, PAGE, OF, NEXT, PREVIOUS } = CV_VIEWER;
-
-    const handleIncrement = () => {
-        dispatch({ type: 'INCREMENT' });
-    };
-
-    const handleDecrement = () => {
-        dispatch({ type: 'DECREMENT' });
-    };
-
-    const smoothScrollToTop = () => {
-        setTimeout(
-            () =>
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth',
-                }),
-            200
-        );
-    };
-
-    const previousPage = () => {
-        handleDecrement();
-        smoothScrollToTop();
-    };
-
-    const nextPage = () => {
-        handleIncrement();
-        smoothScrollToTop();
-    };
-
-    const stopPrev = state.pageNumber <= 1;
-    const stopNext = state.pageNumber >= numPages;
+    const { DOWNLOAD, CONTACT } = CV_VIEWER;
 
     return (
         <div className="cv-viewer">
@@ -76,28 +41,9 @@ const CvViewer = () => {
                 <Link to="/contact">{CONTACT}</Link>
             </div>
             <div className="cv-page-container">
-                <img src={`/img/cv/ds${state.pageNumber}.webp`} alt={`CV page number ${state.pageNumber + 1}`} />
+                <img src={`/img/cv/ds${pageState.pageNumber}.webp`} alt={`CV page number ${pageState.pageNumber + 1}`} />
             </div>
-
-            <div className="pagination">
-                <p data-testid="pageNumberCopy">
-                    {PAGE} {state.pageNumber || (numPages ? 1 : '--')} {OF} {numPages || '--'}
-                </p>
-                <div className="buttons">
-                    <button
-                        type="button"
-                        disabled={stopPrev}
-                        onClick={previousPage}
-                        className="btn"
-                        data-testid="previousPage"
-                    >
-                        {PREVIOUS}
-                    </button>
-                    <button type="button" disabled={stopNext} onClick={nextPage} className="btn" data-testid="nextPage">
-                        {NEXT}
-                    </button>
-                </div>
-            </div>
+            <CvPagination cvPages={cvPages} CV_VIEWER={CV_VIEWER} setPageState={setPageState} pageState={pageState} />
         </div>
     );
 };
