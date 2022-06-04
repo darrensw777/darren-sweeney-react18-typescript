@@ -62,3 +62,27 @@ export interface PageObject {
     canonical: string;
     description: string;
 }
+
+/**
+ * CvPagination component
+ */
+export interface CvPaginationProps {
+    cvPages: string[];
+    CV_VIEWER: {
+        PAGE: string,
+        OF: string,
+        NEXT: string,
+        PREVIOUS: string,
+    };
+    setPageState: Function;
+    pageState: State;
+    className?: string;
+}
+
+export interface State {
+    pageNumber: number;
+}
+
+export interface Action {
+    type: string;
+}

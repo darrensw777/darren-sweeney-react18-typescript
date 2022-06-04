@@ -2,68 +2,59 @@ body {
     color: $primary-grey;
     overflow-y: scroll;
     margin: 0;
+
     &.side-menu-open {
         overflow: hidden;
+
         .main-content-container {
             filter: grayscale(100%) blur(10px);
             transition: 0.5s filter linear,
-            1s -webkit-filter linear;
+                1s -webkit-filter linear;
         }
-        
     }
-}
-.main-content-container {
-    max-width: 100%;
-    background: $white;
-    @include padding;
-    .page-wrapper {
-        min-height: 80vh;
-    }
-    .inner-content {
-        position: relative;
-        max-width: $site-max-width;
-        margin: auto;
+
+    .main-content-container {
+        max-width: 100%;
+        background: $white;
+        @include padding;
+
+        p {
+            @include body-copy;
+        }
     }
 }
 
-.site-footer {
-    > .inner {
-        max-width: $site-max-width;
-        margin: auto;
-    }
-}
+// .cta-link {
+    //     @include body-copy-small;
+    //     border-radius: 6px;
+    //     padding: 10px;
+    //     background: $primary-color;
+    //     height: 30px;
+    //     display: flex;
+    //     align-items: center;
+    //     color: $white;
+    // }
 
-.cta-link {
-    @include body-copy-small;
-    border-radius: 6px;
-    padding: 10px;
-    background: $primary-color;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    color: $white;
-}
 
-p {
-    @include body-copy;
-}
 
-#pageLoadingCoverAnimation {
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    @extend %h1;
-    color: $white;
-    justify-content: center;
-    align-items: center;
-    &.hide {
-        display: none;
-    }
-    &.show {
-        display: flex;
-    }
-}
+    // #pageLoadingCoverAnimation {
+    //     position: absolute;
+    //     z-index: 10;
+    //     top: 0;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     background: rgba(0, 0, 0, 0.7);
+    //     @extend %h1;
+    //     color: $white;
+    //     justify-content: center;
+    //     align-items: center;
+
+    //     &.hide {
+    //         display: none;
+    //     }
+
+    //     &.show {
+    //         display: flex;
+    //     }
+    // }

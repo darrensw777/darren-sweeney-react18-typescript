@@ -2,6 +2,7 @@ import { PageHeader } from "modules";
 import { HomePageBlock } from "components";
 import navLinksAndStyles from "utils/navLinksAndStyles";
 import getCopy from "utils/getCopy";
+import { ContainerWrapper } from "./containerStyles";
 
 const Sections = navLinksAndStyles
     .filter((item) => item.navBlock)
@@ -22,12 +23,14 @@ const Home = () => {
     const HOME_COPY = getCopy({ copyKey: "HOME_COPY", copyPath: "containers/home" });
 
     return (
-        <div className="page-wrapper">
-            <div className="inner-content">
-                <PageHeader pageTitle={HOME_COPY.pageTitle} />
-                <div className="home-group-container">{Sections}</div>
+        <ContainerWrapper>
+            <div className="page-wrapper">
+                <div className="inner-content">
+                    <PageHeader pageTitle={HOME_COPY.pageTitle} />
+                    <div className="home-group-container">{Sections}</div>
+                </div>
             </div>
-        </div>
+        </ContainerWrapper>
     );
 };
 

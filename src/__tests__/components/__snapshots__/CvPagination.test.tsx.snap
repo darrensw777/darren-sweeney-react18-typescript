@@ -3,31 +3,35 @@
 exports[`CvPagination component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="pagination"
+    class="componentStyles__CvPaginationWrapper-sc-1wsblha-0 fSOrmi"
   >
-    <p
-      data-testid="pageNumberCopy"
-    >
-      Page 1 of 4
-    </p>
     <div
-      class="buttons"
+      class="pagination"
     >
-      <button
-        class="btn"
-        data-testid="previousPage"
-        disabled=""
-        type="button"
+      <p
+        data-testid="pageNumberCopy"
       >
-        Previous
-      </button>
-      <button
-        class="btn"
-        data-testid="nextPage"
-        type="button"
+        Page 1 of 4
+      </p>
+      <div
+        class="buttons"
       >
-        Next
-      </button>
+        <button
+          class="btn"
+          data-testid="previousPage"
+          disabled=""
+          type="button"
+        >
+          Previous
+        </button>
+        <button
+          class="btn"
+          data-testid="nextPage"
+          type="button"
+        >
+          Next
+        </button>
+      </div>
     </div>
   </div>
 </DocumentFragment>

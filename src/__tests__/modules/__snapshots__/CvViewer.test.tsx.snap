@@ -3,58 +3,66 @@
 exports[`CvViewer container matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="cv-viewer"
+    class="moduleStyles__CvViewerWrapper-sc-187oehp-0 hHNrHN"
   >
     <div
-      class="links"
+      class="cv-viewer"
     >
-      <a
-        class="download-pdf"
-        href="/pdf/DarrenSweeney5.0.pdf"
-        target="_blank"
-      >
-        Click here to download a PDF of my CV
-      </a>
-      <a
-        href="/contact"
-      >
-        Contact me
-      </a>
-    </div>
-    <div
-      class="cv-page-container"
-    >
-      <img
-        alt="CV page number 2"
-        src="/img/cv/ds1.webp"
-      />
-    </div>
-    <div
-      class="pagination"
-    >
-      <p
-        data-testid="pageNumberCopy"
-      >
-        Page 1 of 4
-      </p>
       <div
-        class="buttons"
+        class="links"
       >
-        <button
-          class="btn"
-          data-testid="previousPage"
-          disabled=""
-          type="button"
+        <a
+          class="download-pdf"
+          href="/pdf/DarrenSweeney5.0.pdf"
+          target="_blank"
         >
-          Previous
-        </button>
-        <button
-          class="btn"
-          data-testid="nextPage"
-          type="button"
+          Click here to download a PDF of my CV
+        </a>
+        <a
+          href="/contact"
         >
-          Next
-        </button>
+          Contact me
+        </a>
+      </div>
+      <div
+        class="cv-page-container"
+      >
+        <img
+          alt="CV page number 2"
+          src="/img/cv/ds1.webp"
+        />
+      </div>
+      <div
+        class="componentStyles__CvPaginationWrapper-sc-1wsblha-0 fSOrmi"
+      >
+        <div
+          class="pagination"
+        >
+          <p
+            data-testid="pageNumberCopy"
+          >
+            Page 1 of 4
+          </p>
+          <div
+            class="buttons"
+          >
+            <button
+              class="btn"
+              data-testid="previousPage"
+              disabled=""
+              type="button"
+            >
+              Previous
+            </button>
+            <button
+              class="btn"
+              data-testid="nextPage"
+              type="button"
+            >
+              Next
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

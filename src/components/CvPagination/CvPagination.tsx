@@ -1,24 +1,6 @@
 import { useState, useReducer, useEffect } from 'react';
-
-interface CvPaginationProps {
-    cvPages: string[];
-    CV_VIEWER: {
-        PAGE: string,
-        OF: string,
-        NEXT: string,
-        PREVIOUS: string
-    };
-    setPageState: Function;
-    pageState: State;
-}
-
-interface State {
-    pageNumber: number;
-}
-
-interface Action {
-    type: string;
-}
+import { CvPaginationProps, State, Action } from 'utils/interfaces'
+import { CvPaginationWrapper } from 'components/componentStyles'
 
 const counterReducer = (state: State, action: Action) => {
     switch (action.type) {
@@ -74,25 +56,27 @@ const CvPagination = ({ cvPages, CV_VIEWER, setPageState, pageState }: CvPaginat
     const stopNext = state.pageNumber >= numPages;
 
     return (
-        <div className="pagination">
-            <p data-testid="pageNumberCopy">
-                {PAGE} {state.pageNumber || (numPages ? 1 : '--')} {OF} {numPages || '--'}
-            </p>
-            <div className="buttons">
-                <button
-                    type="button"
-                    disabled={stopPrev}
-                    onClick={previousPage}
-                    className="btn"
-                    data-testid="previousPage"
-                >
-                    {PREVIOUS}
-                </button>
-                <button type="button" disabled={stopNext} onClick={nextPage} className="btn" data-testid="nextPage">
-                    {NEXT}
-                </button>
+        <CvPaginationWrapper>
+            <div className="pagination">
+                <p data-testid="pageNumberCopy">
+                    {PAGE} {state.pageNumber || (numPages ? 1 : '--')} {OF} {numPages || '--'}
+                </p>
+                <div className="buttons">
+                    <button
+                        type="button"
+                        disabled={stopPrev}
+                        onClick={previousPage}
+                        className="btn"
+                        data-testid="previousPage"
+                    >
+                        {PREVIOUS}
+                    </button>
+                    <button type="button" disabled={stopNext} onClick={nextPage} className="btn" data-testid="nextPage">
+                        {NEXT}
+                    </button>
+                </div>
             </div>
-        </div>
+        </CvPaginationWrapper>
     );
 };
 
