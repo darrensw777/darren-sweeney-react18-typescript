@@ -14,7 +14,6 @@ const SideBarBurgerButton: React.FunctionComponent<
         className={burgerClasses}
         onClick={() => {
             setMenuOpen(!menuOpen);
-            console.log('🚀 ~ file: SideBarMenu.tsx ~ line 50 ~ SideBarMenu ~ menuOpen', menuOpen);
         }}
     >
         {children}

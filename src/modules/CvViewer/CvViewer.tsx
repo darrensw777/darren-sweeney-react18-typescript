@@ -70,7 +70,7 @@ const CvViewer = () => {
     return (
         <div className="cv-viewer">
             <div className="links">
-                <a href="/pdf/DarrenSweeney4.0.pdf" className="download-pdf" target="_blank">
+                <a href="/pdf/DarrenSweeney5.0.pdf" className="download-pdf" target="_blank">
                     {DOWNLOAD}
                 </a>
                 <Link to="/contact">{CONTACT}</Link>

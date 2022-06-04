@@ -1,33 +1,40 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Button } from 'formElements';
+import { SideBarBurgerButton } from 'formElements';
 
 //👇 This default export determines where your story goes in the story list
 export default {
-  /* 👇 The title prop is optional.
-  * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
-  * to learn how to generate automatic titles
-  */
-  title: 'form elements/Button',
-  component: Button,
-} as ComponentMeta<typeof Button>;
+    /* 👇 The title prop is optional.
+    * See https://storybook.js.org/docs/react/configure/overview#configure-story-loading
+    * to learn how to generate automatic titles
+    */
+    title: 'form elements/SideBarBurgerButton',
+    component: SideBarBurgerButton,
+} as ComponentMeta<typeof SideBarBurgerButton>;
 
 //👇 We create a “template” of how args map to rendering
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
+const Template: ComponentStory<typeof SideBarBurgerButton> = (args) =>
+    <div className="sidebar-container"><SideBarBurgerButton {...args}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </SideBarBurgerButton></div>;
 
-export const Primary = Template.bind({});
+export const MenuClosed = Template.bind({});
 
-Primary.args = {
-  /*👇 The args you need here will depend on your component */
-  type:'submit',
-  label: 'Click me'
+MenuClosed.args = {
+    /*👇 The args you need here will depend on your component */
+    burgerClasses: 'btn close-menu-icon',
+    setMenuOpen: () => { },
+    menuOpen: false,
 };
 
-export const Secondary = Template.bind({});
+export const MenuOpen = Template.bind({});
 
-Secondary.args = {
-  /*👇 The args you need here will depend on your component */
-  type:'submit',
-  label: 'Click me',
-  primary: false
+MenuOpen.args = {
+    /*👇 The args you need here will depend on your component */
+    burgerClasses: 'btn close-menu-icon open',
+    setMenuOpen: () => { },
+    menuOpen: true,
 };

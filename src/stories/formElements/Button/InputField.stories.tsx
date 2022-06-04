@@ -46,12 +46,3 @@ Primary.args = {
     className: 'class',
     id: '123'
 };
-
-// export const Secondary = Template.bind({});
-
-// Secondary.args = {
-//   /*👇 The args you need here will depend on your component */
-//   type:'submit',
-//   label: 'Click me',
-//   primary: false
-// };
