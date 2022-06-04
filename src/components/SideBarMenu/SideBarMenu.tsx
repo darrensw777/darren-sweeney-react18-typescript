@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import { SideBarMenuLinks } from 'components';
 import { SideBarMenuProps } from 'utils/interfaces';
-import { SideBarButtonWrapper } from 'formElements';
+import { SideBarBurgerButton } from 'formElements';
 
 const SideBarMenu = ({ navLinksAndStyles }: SideBarMenuProps) => {
     // prettier-ignore
@@ -16,7 +16,7 @@ const SideBarMenu = ({ navLinksAndStyles }: SideBarMenuProps) => {
     }, [menuOpen]);
     return (
         <div className="sidebar-container">
-            <SideBarButtonWrapper
+            <SideBarBurgerButton
                 id="burger-menu"
                 burgerClasses={burgerClasses}
                 setMenuOpen={setMenuOpen}
@@ -26,7 +26,7 @@ const SideBarMenu = ({ navLinksAndStyles }: SideBarMenuProps) => {
                 <span></span>
                 <span></span>
                 <span></span>
-            </SideBarButtonWrapper>
+            </SideBarBurgerButton>
             <div className={containerClasses} id="sideBarMenu">
                 <Link to="/" className="name-logo">
                     Darren Sweeney

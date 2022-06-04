@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import icons from 'utils/faIcons';
 
 interface Props {
     link: string;
@@ -9,6 +10,7 @@ interface Props {
 }
 
 const HomePageBlock = ({ link, homeImagePath, iconClass, title, backgroundColor }: Props) => {
+
     const bgColor = `linear-gradient(to bottom, #f1f1f1 50%, ${backgroundColor} 50%)`;
 
     return (
@@ -24,7 +26,7 @@ const HomePageBlock = ({ link, homeImagePath, iconClass, title, backgroundColor 
                         <img src={homeImagePath} className="img-responsive" alt="" />
                     </div>
                     <div className="link-holder">
-                        <i className={iconClass} aria-hidden="true" />
+                        {icons[iconClass]}
                         {title}
                     </div>
                 </div>

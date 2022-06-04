@@ -1,9 +1,9 @@
 // @ts-nocheck
 
 import { useState } from 'react';
-import { Formik, Field } from 'formik';
+import { Formik } from 'formik';
 import contactFormValidation from 'validation/contactForm';
-import { InputField } from 'formElements';
+import { InputField, Button } from 'formElements';
 
 interface MessageProps {
     name: string;
@@ -96,15 +96,14 @@ const ContactFormik = ({ CONTACT_COPY }) => {
                                     rows="6"
                                 />
                                 <div className="buttons">
-                                    <input
+                                    <Button
                                         id="contactFormSubmit"
-                                        name="submit"
                                         type="submit"
                                         disabled={isSubmitting}
-                                        value="Send Message"
-                                        className="btn btn-primary"
+                                        primary={true}
+                                        label="Send message"
                                     />
-                                    <input type="reset" value="Clear" className="btn hollow" />
+                                    <Button type="reset" primary={false} label="Clear" />
                                 </div>
                             </form>
                         </>

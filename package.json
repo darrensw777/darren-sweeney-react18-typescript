@@ -15,6 +15,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
+    "react-icons": "^4.4.0",
     "react-image-gallery": "^1.2.8",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
@@ -28,7 +29,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "test:coverage": "react-scripts test --coverage --watchAll=false",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "browserslist": {
     "production": [
@@ -43,8 +46,33 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.5.6",
+    "@storybook/addon-essentials": "^6.5.6",
+    "@storybook/addon-interactions": "^6.5.6",
+    "@storybook/addon-links": "^6.5.6",
+    "@storybook/builder-webpack5": "^6.5.6",
+    "@storybook/manager-webpack5": "^6.5.6",
+    "@storybook/node-logger": "^6.5.6",
+    "@storybook/preset-create-react-app": "^4.1.2",
+    "@storybook/react": "^6.5.6",
+    "@storybook/testing-library": "^0.0.11",
     "@types/react-helmet": "^6.1.5",
     "@types/react-image-gallery": "^1.0.5",
-    "prettier": "2.6.2"
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "prettier": "2.6.2",
+    "prop-types": "^15.8.1",
+    "webpack": "^5.73.0"
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   }
 }

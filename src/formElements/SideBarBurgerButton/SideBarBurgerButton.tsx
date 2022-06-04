@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-const SideBarButtonWrapper: React.FunctionComponent<
+const SideBarBurgerButton: React.FunctionComponent<
     React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & {
         burgerClasses: string,
         setMenuOpen: Function,
@@ -21,4 +21,4 @@ const SideBarButtonWrapper: React.FunctionComponent<
     </button>
 );
 
-export default SideBarButtonWrapper;
+export default SideBarBurgerButton;

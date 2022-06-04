@@ -74,18 +74,20 @@ exports[`ContactFormik container matches snapshot 1`] = `
       <div
         class="buttons"
       >
-        <input
+        <button
           class="btn btn-primary"
           id="contactFormSubmit"
-          name="submit"
           type="submit"
-          value="Send Message"
-        />
-        <input
-          class="btn hollow"
+        >
+          Send message
+        </button>
+        <button
+          class="btn btn-primary hollow"
+          id="contactFormSubmit"
           type="reset"
-          value="Clear"
-        />
+        >
+          Clear
+        </button>
       </div>
     </form>
   </div>

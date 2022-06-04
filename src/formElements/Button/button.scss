@@ -1,0 +1,16 @@
+.btn {
+    height: $cta-button-height;
+    border: 1px solid $primary-grey;
+    cursor: pointer;
+
+    &.btn-primary {
+        background: $primary-grey;
+        color: $white;
+        margin-right: $margin-small;
+    }
+
+    &.hollow {
+        background: transparent;
+        color: $primary-grey;
+    }
+}

@@ -5,6 +5,7 @@
     @include margin-bottom;
     justify-content: space-between;
     flex-wrap: wrap;
+
     .homepage-block {
         display: inline-block;
         color: #fff;
@@ -38,6 +39,7 @@
                 margin-top: 8%;
                 margin-bottom: 8%;
                 border: 6px solid #fff;
+
                 img {
                     clip-path: circle();
                     width: 100%;
@@ -50,6 +52,10 @@
                 align-items: center;
                 justify-content: center;
                 @include header-font;
+
+                svg {
+                    margin-right: 10px;
+                }
             }
         }
 
@@ -63,10 +69,6 @@
             cursor: pointer;
             text-decoration: none;
 
-        }
-
-        .fa {
-            margin-right: 10px;
         }
     }
 }

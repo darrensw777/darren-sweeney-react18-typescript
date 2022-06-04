@@ -5,5 +5,6 @@
  * import { Logo, Avatar } from 'components';
  */
 
-export { default as SideBarButtonWrapper } from './SideBarButtonWrapper';
+export { default as SideBarBurgerButton } from './SideBarBurgerButton';
 export { default as InputField } from './InputField';
+export { default as Button } from './Button';

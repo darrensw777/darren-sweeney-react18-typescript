@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import icons from 'utils/faIcons';
 
 interface Props {
     link: string;
@@ -20,7 +21,7 @@ const SideNavBlock = ({ link, iconClass, title, backgroundColor, onClick }: Prop
         >
             <Link to={link} className="link" onClick={onClick} role="navigation" aria-label={title}>
                 <div className="icon">
-                    <i className={iconClass} aria-hidden="true" />
+                    {icons[iconClass]}
                 </div>
                 <div className="link">{title}</div>
             </Link>
