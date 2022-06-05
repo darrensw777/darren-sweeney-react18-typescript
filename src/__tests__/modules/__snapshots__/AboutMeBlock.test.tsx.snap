@@ -2,45 +2,53 @@
 
 exports[`AboutMeBlock container matches snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="about-me"
+  <section
+    class="moduleStyles__AboutMeBlockWrapper-sc-187oehp-6 vSNet"
   >
     <div
-      class="profile-image"
-    >
-      <img
-        alt="C'est moi!"
-        src="/img/gallery/darren.webp"
-      />
-    </div>
-    <h2 />
-    <p>
-      hello
-    </p>
-    <p>
-      world
-    </p>
-    <h3>
-      Interests
-    </h3>
-    <div
-      class="question-container"
+      class="about-me"
     >
       <div
-        class="question-container__question"
+        class="profile-image"
       >
-        string:
+        <img
+          alt="C'est moi!"
+          src="/img/gallery/darren.webp"
+        />
       </div>
-      <div
-        class="question-container__answers"
+      <h2 />
+      <p>
+        hello
+      </p>
+      <p>
+        world
+      </p>
+      <h3>
+        Interests
+      </h3>
+      <section
+        class="moduleStyles__InterestListsWrapper-sc-187oehp-7 fzQbfK"
       >
-        <ul>
-          <li>
-            answer1
-          </li>
-        </ul>
-      </div>
+        <div
+          class="question-container"
+        >
+          <div
+            class="question-container__question"
+          >
+            string:
+          </div>
+          <div
+            class="question-container__answers"
+          >
+            <ul>
+              <li>
+                answer1
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
-  </div>
+  </section>
 </DocumentFragment>
 `;

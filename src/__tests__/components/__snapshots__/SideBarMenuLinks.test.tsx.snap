@@ -3,42 +3,50 @@
 exports[`SideBarMenuLinks component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="side-nav-block"
+    class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 eGsRvE"
   >
-    <a
-      aria-label="Home"
-      class="link"
-      href="/"
-      role="navigation"
+    <div
+      class="side-nav-block"
     >
-      <div
-        class="icon"
-      />
-      <div
+      <a
+        aria-label="Home"
         class="link"
+        href="/"
+        role="navigation"
       >
-        Home
-      </div>
-    </a>
+        <div
+          class="icon"
+        />
+        <div
+          class="link"
+        >
+          Home
+        </div>
+      </a>
+    </div>
   </div>
   <div
-    class="side-nav-block"
+    class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 eGsRvE"
   >
-    <a
-      aria-label="link"
-      class="link"
-      href="/link"
-      role="navigation"
+    <div
+      class="side-nav-block"
     >
-      <div
-        class="icon"
-      />
-      <div
+      <a
+        aria-label="link"
         class="link"
+        href="/link"
+        role="navigation"
       >
-        link
-      </div>
-    </a>
+        <div
+          class="icon"
+        />
+        <div
+          class="link"
+        >
+          link
+        </div>
+      </a>
+    </div>
   </div>
 </DocumentFragment>
 `;

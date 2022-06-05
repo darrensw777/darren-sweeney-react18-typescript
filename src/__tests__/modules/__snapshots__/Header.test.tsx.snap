@@ -3,80 +3,84 @@
 exports[`Header module matches snapshot 1`] = `
 <DocumentFragment>
   <header
-    class="header"
-    data-module="header"
+    class="moduleStyles__HeaderWrapper-sc-187oehp-4 cAMyes"
   >
     <div
-      class="header__wrapper"
+      class="header"
+      data-module="header"
     >
       <div
-        class="inner-content"
+        class="header__wrapper"
       >
-        <a
-          class="name-logo"
-          href="/"
-          role="navigation"
+        <div
+          class="inner-content"
         >
-          Darren Sweeney
-        </a>
-        <ul
-          class="header-nav"
-        >
-          <li>
-            <a
-              aria-current="true"
-              class="my-auto"
-              href="/"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              class="my-auto"
-              href="/about"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              class="my-auto"
-              href="/work"
-            >
-              Work
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              class="my-auto"
-              href="/music"
-            >
-              Music
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              class="my-auto"
-              href="/gallery"
-            >
-              Gallery
-            </a>
-          </li>
-          <li>
-            <a
-              aria-current="false"
-              class="my-auto"
-              href="/contact"
-            >
-              Contact
-            </a>
-          </li>
-        </ul>
+          <a
+            class="name-logo"
+            href="/"
+            role="navigation"
+          >
+            Darren Sweeney
+          </a>
+          <ul
+            class="header-nav"
+          >
+            <li>
+              <a
+                aria-current="true"
+                class="my-auto"
+                href="/"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current="false"
+                class="my-auto"
+                href="/about"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current="false"
+                class="my-auto"
+                href="/work"
+              >
+                Work
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current="false"
+                class="my-auto"
+                href="/music"
+              >
+                Music
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current="false"
+                class="my-auto"
+                href="/gallery"
+              >
+                Gallery
+              </a>
+            </li>
+            <li>
+              <a
+                aria-current="false"
+                class="my-auto"
+                href="/contact"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>

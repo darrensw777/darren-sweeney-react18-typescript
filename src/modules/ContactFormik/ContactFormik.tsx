@@ -1,9 +1,9 @@
 // @ts-nocheck
-
 import { useState } from 'react';
 import { Formik } from 'formik';
 import contactFormValidation from 'validation/contactForm';
 import { InputField, Button } from 'formElements';
+import { ContactFormikWrapper } from 'modules/moduleStyles'
 
 interface MessageProps {
     name: string;
@@ -32,85 +32,87 @@ const ContactFormik = ({ CONTACT_COPY }) => {
     const { allFieldsRequired } = misc;
 
     return (
-        <div className="form-wrapper">
-            <Formik
-                initialValues={{ name: '', email: '', message: '' }}
-                validationSchema={contactFormValidation({ error: validationErrorMessages })}
-                onSubmit={(values, { setSubmitting, resetForm }) => {
-                    fetch('/', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/x-www-form-urlencoded',
-                        },
-                        body: encode({
-                            'form-name': 'contactForm',
-                            ...values,
-                        }),
-                    })
-                        .then(() => {
-                            setMessageSendStatus(formSuccess);
-                            setSubmitting(false);
-                            resetForm();
+        <ContactFormikWrapper>
+            <div className="form-wrapper">
+                <Formik
+                    initialValues={{ name: '', email: '', message: '' }}
+                    validationSchema={contactFormValidation({ error: validationErrorMessages })}
+                    onSubmit={(values, { setSubmitting, resetForm }) => {
+                        fetch('/', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/x-www-form-urlencoded',
+                            },
+                            body: encode({
+                                'form-name': 'contactForm',
+                                ...values,
+                            }),
                         })
-                        .catch(() => {
-                            setMessageSendStatus(formError);
-                            setSubmitting(false);
-                        });
-                }}
-            >
-                {({ touched, errors, isSubmitting, handleSubmit, handleReset }) => {
-                    return (
-                        <>
-                            {messageSendStatus && <p className="message-send-status">{messageSendStatus}</p>}
-                            <form
-                                className="form"
-                                name="contactForm"
-                                onSubmit={handleSubmit}
-                                onReset={handleReset}
-                                data-netlify="true"
-                                data-netlify-honeypot="bot-field"
-                            >
-                                <input name="bot-field" hidden />
-                                <p className="helper">{allFieldsRequired}</p>
-                                <InputField
-                                    fieldName={name}
-                                    touched={touched}
-                                    errors={errors}
-                                    className="input-text"
-                                    id="name"
-                                />
-                                <InputField
-                                    fieldName={name}
-                                    touched={touched}
-                                    errors={errors}
-                                    className="input-text"
-                                    id="email"
-                                />
-                                <InputField
-                                    fieldName={message}
-                                    touched={touched}
-                                    errors={errors}
-                                    className="input-textarea"
-                                    id="message"
-                                    component="textarea"
-                                    rows="6"
-                                />
-                                <div className="buttons">
-                                    <Button
-                                        id="contactFormSubmit"
-                                        type="submit"
-                                        disabled={isSubmitting}
-                                        primary={true}
-                                        label="Send message"
+                            .then(() => {
+                                setMessageSendStatus(formSuccess);
+                                setSubmitting(false);
+                                resetForm();
+                            })
+                            .catch(() => {
+                                setMessageSendStatus(formError);
+                                setSubmitting(false);
+                            });
+                    }}
+                >
+                    {({ touched, errors, isSubmitting, handleSubmit, handleReset }) => {
+                        return (
+                            <>
+                                {messageSendStatus && <p className="message-send-status">{messageSendStatus}</p>}
+                                <form
+                                    className="form"
+                                    name="contactForm"
+                                    onSubmit={handleSubmit}
+                                    onReset={handleReset}
+                                    data-netlify="true"
+                                    data-netlify-honeypot="bot-field"
+                                >
+                                    <input name="bot-field" hidden />
+                                    <p className="helper">{allFieldsRequired}</p>
+                                    <InputField
+                                        fieldName={name}
+                                        touched={touched}
+                                        errors={errors}
+                                        className="input-text"
+                                        id="name"
                                     />
-                                    <Button type="reset" primary={false} label="Clear" />
-                                </div>
-                            </form>
-                        </>
-                    );
-                }}
-            </Formik>
-        </div>
+                                    <InputField
+                                        fieldName={name}
+                                        touched={touched}
+                                        errors={errors}
+                                        className="input-text"
+                                        id="email"
+                                    />
+                                    <InputField
+                                        fieldName={message}
+                                        touched={touched}
+                                        errors={errors}
+                                        className="input-textarea"
+                                        id="message"
+                                        component="textarea"
+                                        rows="6"
+                                    />
+                                    <div className="buttons">
+                                        <Button
+                                            id="contactFormSubmit"
+                                            type="submit"
+                                            disabled={isSubmitting}
+                                            primary={true}
+                                            label="Send message"
+                                        />
+                                        <Button type="reset" primary={false} label="Clear" />
+                                    </div>
+                                </form>
+                            </>
+                        );
+                    }}
+                </Formik>
+            </div>
+        </ContactFormikWrapper>
     );
 };
 

@@ -2,94 +2,118 @@
 
 exports[`ContactFormik container matches snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="form-wrapper"
+  <section
+    class="moduleStyles__ContactFormikWrapper-sc-187oehp-2 huJfgU"
   >
-    <form
-      class="form"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
-      name="contactForm"
+    <div
+      class="form-wrapper"
     >
-      <input
-        hidden=""
-        name="bot-field"
-      />
-      <p
-        class="helper"
+      <form
+        class="form"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        name="contactForm"
       >
-        All fields are required
-      </p>
-      <div
-        class="field"
-      >
-        <label
-          class="label"
-          for="name"
-        >
-          Name:
-        </label>
         <input
-          class="input-text"
-          id="name"
-          name="name"
-          type="text"
-          value=""
+          hidden=""
+          name="bot-field"
         />
-      </div>
-      <div
-        class="field"
-      >
-        <label
-          class="label"
-          for="name"
+        <p
+          class="helper"
         >
-          Name:
-        </label>
-        <input
-          class="input-text"
-          id="email"
-          name="email"
-          type="text"
-          value=""
-        />
-      </div>
-      <div
-        class="field"
-      >
-        <label
-          class="label"
-          for="name"
+          All fields are required
+        </p>
+        <div
+          class="formElementsStyles__InputFieldWrapper-sc-1yt8nu9-2 gPJWae"
         >
-          Message:
-        </label>
-        <textarea
-          class="input-textarea"
-          id="message"
-          name="message"
-          rows="6"
-          type="text"
-        />
-      </div>
-      <div
-        class="buttons"
-      >
-        <button
-          class="btn btn-primary"
-          id="contactFormSubmit"
-          type="submit"
+          <div
+            class="field"
+          >
+            <label
+              class="label"
+              for="name"
+            >
+              Name:
+            </label>
+            <input
+              class="input-text"
+              id="name"
+              name="name"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="formElementsStyles__InputFieldWrapper-sc-1yt8nu9-2 gPJWae"
         >
-          Send message
-        </button>
-        <button
-          class="btn btn-primary hollow"
-          id="contactFormSubmit"
-          type="reset"
+          <div
+            class="field"
+          >
+            <label
+              class="label"
+              for="name"
+            >
+              Name:
+            </label>
+            <input
+              class="input-text"
+              id="email"
+              name="email"
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="formElementsStyles__InputFieldWrapper-sc-1yt8nu9-2 gPJWae"
         >
-          Clear
-        </button>
-      </div>
-    </form>
-  </div>
+          <div
+            class="field"
+          >
+            <label
+              class="label"
+              for="name"
+            >
+              Message:
+            </label>
+            <textarea
+              class="input-textarea"
+              id="message"
+              name="message"
+              rows="6"
+              type="text"
+            />
+          </div>
+        </div>
+        <div
+          class="buttons"
+        >
+          <div
+            class="formElementsStyles__ButtonWrapper-sc-1yt8nu9-1 hEDtBD"
+          >
+            <button
+              class="btn btn-primary"
+              id="contactFormSubmit"
+              type="submit"
+            >
+              Send message
+            </button>
+          </div>
+          <div
+            class="formElementsStyles__ButtonWrapper-sc-1yt8nu9-1 hEDtBD"
+          >
+            <button
+              class="btn btn-primary hollow"
+              id="contactFormSubmit"
+              type="reset"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
 </DocumentFragment>
 `;

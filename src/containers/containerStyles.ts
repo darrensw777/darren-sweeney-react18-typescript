@@ -1,7 +1,5 @@
 import styled from 'styled-components/macro';
-import variables from 'utils/styling/variables';
-
-const { SITE_MAX_WIDTH } = variables;
+import { SITE_MAX_WIDTH } from 'utils/styling/variables';
 
 export const ContainerWrapper = styled.div`
     .page-wrapper {

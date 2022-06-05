@@ -1,8 +1,9 @@
 import { InterestsProps } from "utils/interfaces";
+import { InterestListsWrapper } from 'modules/moduleStyles'
 
 const InterestLists = ({ interests }: InterestsProps) => {
     return (
-        <>
+        <InterestListsWrapper>
             {interests.map((interest, idx) => {
                 const { question, answers } = interest;
                 const answerList = answers.map((answer, idx) => <li key={idx}>{answer}</li>);
@@ -15,7 +16,7 @@ const InterestLists = ({ interests }: InterestsProps) => {
                     </div>
                 );
             })}
-        </>
+        </InterestListsWrapper>
     );
 };
 

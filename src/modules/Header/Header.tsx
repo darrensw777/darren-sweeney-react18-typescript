@@ -2,6 +2,7 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { GetCurrentPage } from 'utils/commonUtils';
 import { I18nContext } from 'utils/context';
+import { HeaderWrapper } from 'modules/moduleStyles'
 
 interface HeaderLinks {
     active: boolean;
@@ -45,18 +46,20 @@ const Header = () => {
     const { headerLinks } = HeaderCopy;
 
     return (
-        <header data-module="header" className="header">
-            <div className="header__wrapper">
-                <div className="inner-content">
-                    <Link to="/" className="name-logo" role="navigation">
-                        Darren Sweeney
-                    </Link>
-                    <ul className="header-nav">
-                        <Links headerLinks={headerLinks} />
-                    </ul>
+        <HeaderWrapper>
+            <div data-module="header" className="header">
+                <div className="header__wrapper">
+                    <div className="inner-content">
+                        <Link to="/" className="name-logo" role="navigation">
+                            Darren Sweeney
+                        </Link>
+                        <ul className="header-nav">
+                            <Links headerLinks={headerLinks} />
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </header>
+        </HeaderWrapper>
     );
 };
 

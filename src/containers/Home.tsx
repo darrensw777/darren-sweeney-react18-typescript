@@ -1,23 +1,7 @@
-import { PageHeader } from "modules";
-import { HomePageBlock } from "components";
-import navLinksAndStyles from "utils/navLinksAndStyles";
+import { PageHeader, HomePageBlockContainer } from "modules";
 import getCopy from "utils/getCopy";
+import navLinksAndStyles from "utils/navLinksAndStyles";
 import { ContainerWrapper } from "./containerStyles";
-
-const Sections = navLinksAndStyles
-    .filter((item) => item.navBlock)
-    .map((navItem, idx) => {
-        return (
-            <HomePageBlock
-                key={idx}
-                backgroundColor={navItem.backgroundColor}
-                link={navItem.link}
-                homeImagePath={navItem.homeImagePath}
-                iconClass={navItem.iconClass}
-                title={navItem.title}
-            />
-        );
-    });
 
 const Home = () => {
     const HOME_COPY = getCopy({ copyKey: "HOME_COPY", copyPath: "containers/home" });
@@ -27,7 +11,7 @@ const Home = () => {
             <div className="page-wrapper">
                 <div className="inner-content">
                     <PageHeader pageTitle={HOME_COPY.pageTitle} />
-                    <div className="home-group-container">{Sections}</div>
+                    <HomePageBlockContainer navLinksAndStyles={navLinksAndStyles} />
                 </div>
             </div>
         </ContainerWrapper>

@@ -3,13 +3,15 @@
 exports[`HomePageBlock component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="homepage-block"
+    class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 hoPKUo"
   >
-    <a
-      class="link"
-      href="/link/path"
+    <div
+      class="homepage-block"
     >
-      <div>
+      <a
+        class="link"
+        href="/link/path"
+      >
         <div
           class="card-image"
         >
@@ -24,8 +26,8 @@ exports[`HomePageBlock component matches snapshot 1`] = `
         >
           myTitle
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
 </DocumentFragment>
 `;

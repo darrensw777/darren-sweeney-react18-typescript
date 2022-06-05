@@ -2,71 +2,75 @@
 
 exports[`InterestLists module matches snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="question-container"
+  <section
+    class="moduleStyles__InterestListsWrapper-sc-187oehp-7 fzQbfK"
   >
     <div
-      class="question-container__question"
+      class="question-container"
     >
-      Music:
+      <div
+        class="question-container__question"
+      >
+        Music:
+      </div>
+      <div
+        class="question-container__answers"
+      >
+        <ul>
+          <li>
+            Journey
+          </li>
+          <li>
+            Steve Perry
+          </li>
+          <li>
+            80s AOR
+          </li>
+          <li>
+            Simon & Garfunkel
+          </li>
+          <li>
+            Keane
+          </li>
+        </ul>
+      </div>
     </div>
     <div
-      class="question-container__answers"
+      class="question-container"
     >
-      <ul>
-        <li>
-          Journey
-        </li>
-        <li>
-          Steve Perry
-        </li>
-        <li>
-          80s AOR
-        </li>
-        <li>
-          Simon & Garfunkel
-        </li>
-        <li>
-          Keane
-        </li>
-      </ul>
+      <div
+        class="question-container__question"
+      >
+        TV Shows:
+      </div>
+      <div
+        class="question-container__answers"
+      >
+        <ul>
+          <li>
+            Suits
+          </li>
+          <li>
+            Breaking Bad
+          </li>
+          <li>
+            The Witcher
+          </li>
+          <li>
+            Peaky Blinders
+          </li>
+          <li>
+            Mad Men
+          </li>
+          <li>
+            The Boys
+          </li>
+          <li>
+            Killing Eve
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div
-    class="question-container"
-  >
-    <div
-      class="question-container__question"
-    >
-      TV Shows:
-    </div>
-    <div
-      class="question-container__answers"
-    >
-      <ul>
-        <li>
-          Suits
-        </li>
-        <li>
-          Breaking Bad
-        </li>
-        <li>
-          The Witcher
-        </li>
-        <li>
-          Peaky Blinders
-        </li>
-        <li>
-          Mad Men
-        </li>
-        <li>
-          The Boys
-        </li>
-        <li>
-          Killing Eve
-        </li>
-      </ul>
-    </div>
-  </div>
+  </section>
 </DocumentFragment>
 `;

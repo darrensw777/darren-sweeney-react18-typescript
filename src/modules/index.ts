@@ -14,3 +14,4 @@ export { default as SoundCloudPlayer } from './SoundCloudPlayer';
 export { default as ImagesGallery } from './ImagesGallery';
 export { default as ContactFormik } from './ContactFormik';
 export { default as InterestLists } from './InterestLists';
+export { default as HomePageBlockContainer } from './HomePageBlockContainer';

@@ -1,5 +1,6 @@
 import ImageGallery from 'react-image-gallery';
 import 'react-image-gallery/styles/css/image-gallery.css';
+import { ImagesGalleryWrapper } from 'modules/moduleStyles'
 
 interface ImageObject {
     original: string;
@@ -17,7 +18,7 @@ const galleries = ({ galleryImages }: ImagesGalleryProps) => {
 
 const ImagesGallery = ({ galleryImages }: ImagesGalleryProps) => {
     const imageGallery = galleries({ galleryImages });
-    return <div className="images-gallery">{imageGallery}</div>;
+    return <ImagesGalleryWrapper><div className="images-gallery">{imageGallery}</div></ImagesGalleryWrapper>;
 };
 
 export default ImagesGallery;

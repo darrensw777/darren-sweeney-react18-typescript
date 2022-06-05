@@ -3,67 +3,83 @@
 exports[`SideBarMenu component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="sidebar-container"
+    class="componentStyles__SideBarMenuWrapper-sc-1wsblha-2 dTCYpA"
   >
-    <button
-      class="btn close-menu-icon"
-      id="burger-menu"
-    >
-      <span />
-      <span />
-      <span />
-      <span />
-    </button>
     <div
-      class="sidebar-menu"
-      id="sideBarMenu"
+      class="sidebar-container"
     >
-      <a
-        class="name-logo"
-        href="/"
-      >
-        Darren Sweeney
-      </a>
       <div
-        class="nav-block-container"
+        class="formElementsStyles__SideBarBurgerButtonWrapper-sc-1yt8nu9-0 kHAvLr"
       >
-        <div
-          class="side-nav-block"
+        <button
+          class="btn close-menu-icon"
+          id="burger-menu"
         >
-          <a
-            aria-label="Home"
-            class="link"
-            href="/"
-            role="navigation"
+          <span />
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+      <div
+        class="sidebar-menu"
+        id="sideBarMenu"
+      >
+        <a
+          class="name-logo"
+          href="/"
+        >
+          Darren Sweeney
+        </a>
+        <div
+          class="nav-block-container"
+        >
+          <div
+            class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 eGsRvE"
           >
             <div
-              class="icon"
-            />
-            <div
-              class="link"
+              class="side-nav-block"
             >
-              Home
+              <a
+                aria-label="Home"
+                class="link"
+                href="/"
+                role="navigation"
+              >
+                <div
+                  class="icon"
+                />
+                <div
+                  class="link"
+                >
+                  Home
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div
-          class="side-nav-block"
-        >
-          <a
-            aria-label="link"
-            class="link"
-            href="/link"
-            role="navigation"
+          </div>
+          <div
+            class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 eGsRvE"
           >
             <div
-              class="icon"
-            />
-            <div
-              class="link"
+              class="side-nav-block"
             >
-              link
+              <a
+                aria-label="link"
+                class="link"
+                href="/link"
+                role="navigation"
+              >
+                <div
+                  class="icon"
+                />
+                <div
+                  class="link"
+                >
+                  link
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
         </div>
       </div>
     </div>

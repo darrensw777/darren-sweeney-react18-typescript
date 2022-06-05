@@ -1,7 +1,6 @@
 import { css } from 'styled-components';
-
-const PADDING = '20px';
-const MARGIN = '20px';
+import { FONT_SIZE_REGULAR, FONT_SIZE_SMALL } from 'utils/styling/typography';
+import { PADDING, MARGIN, BORDER_RADIUS } from './variables';
 
 export const Padding = () => css`
     padding: ${PADDING};
@@ -56,4 +55,20 @@ export const RegularFont = () => css`
     letter-spacing: 0.05em;
     text-rendering: optimizeLegibility;
     line-height: 24px;
+`;
+
+export const BodyCopy = () => css`
+    ${RegularFont};
+    font-size: ${FONT_SIZE_REGULAR};
+    line-height: 14px;
+`;
+
+export const BodyCopySmall = () => css`
+    ${RegularFont};
+    font-size: ${FONT_SIZE_SMALL};
+    line-height: 14px;
+`;
+
+export const BorderRadius = () => css`
+    border-radius: ${BORDER_RADIUS};
 `;

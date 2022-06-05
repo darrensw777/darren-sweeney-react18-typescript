@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import { SideBarMenuLinks } from 'components';
 import { SideBarMenuProps } from 'utils/interfaces';
 import { SideBarBurgerButton } from 'formElements';
+import { SideBarMenuWrapper } from 'components/componentStyles'
 
 const SideBarMenu = ({ navLinksAndStyles }: SideBarMenuProps) => {
     // prettier-ignore
@@ -15,27 +16,29 @@ const SideBarMenu = ({ navLinksAndStyles }: SideBarMenuProps) => {
         document.body.classList.toggle('side-menu-open', menuOpen);
     }, [menuOpen]);
     return (
-        <div className="sidebar-container">
-            <SideBarBurgerButton
-                id="burger-menu"
-                burgerClasses={burgerClasses}
-                setMenuOpen={setMenuOpen}
-                menuOpen={menuOpen}
-            >
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </SideBarBurgerButton>
-            <div className={containerClasses} id="sideBarMenu">
-                <Link to="/" className="name-logo">
-                    Darren Sweeney
-                </Link>
-                <div className="nav-block-container">
-                    <SideBarMenuLinks setMenuOpen={setMenuOpen} navLinksAndStyles={navLinksAndStyles} />
+        <SideBarMenuWrapper>
+            <div className="sidebar-container">
+                <SideBarBurgerButton
+                    id="burger-menu"
+                    burgerClasses={burgerClasses}
+                    setMenuOpen={setMenuOpen}
+                    menuOpen={menuOpen}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </SideBarBurgerButton>
+                <div className={containerClasses} id="sideBarMenu">
+                    <Link to="/" className="name-logo">
+                        Darren Sweeney
+                    </Link>
+                    <div className="nav-block-container">
+                        <SideBarMenuLinks setMenuOpen={setMenuOpen} navLinksAndStyles={navLinksAndStyles} />
+                    </div>
                 </div>
             </div>
-        </div>
+        </SideBarMenuWrapper>
     );
 };
 

@@ -3,16 +3,20 @@
 exports[`Footer module matches snapshot 1`] = `
 <DocumentFragment>
   <footer
-    class="footer"
-    role="contentinfo"
+    class="moduleStyles__FooterWrapper-sc-187oehp-3 hAXTKZ"
   >
     <div
-      class="inner-content"
+      class="footer"
+      role="contentinfo"
     >
       <div
-        class="copyright"
+        class="inner-content"
       >
-        ©2022 Darren Sweeney
+        <div
+          class="copyright"
+        >
+          ©2022 Darren Sweeney
+        </div>
       </div>
     </div>
   </footer>

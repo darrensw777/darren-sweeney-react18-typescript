@@ -86,3 +86,33 @@ export interface State {
 export interface Action {
     type: string;
 }
+
+/**
+ * HomePageBlockContainer
+ */
+
+interface HomePageBlockProps {
+    link: string;
+    title: string;
+    id: string;
+    iconClass: string;
+    backgroundColor: string;
+    homeImagePath: string;
+    navBlock: boolean;
+}
+
+export interface HomePageBlockContainerProps {
+    navLinksAndStyles: HomePageBlockProps[];
+}
+
+/**
+ * PageHeader
+ */
+
+interface PageTitleProps {
+    title: string;
+    subTitle?: string;
+}
+export interface PageHeaderProps {
+    pageTitle: PageTitleProps;
+}

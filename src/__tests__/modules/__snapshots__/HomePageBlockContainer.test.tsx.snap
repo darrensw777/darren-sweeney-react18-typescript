@@ -1,0 +1,178 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePageBlockContainer container matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="moduleStyles__HomePageBlockContainerWrapper-sc-187oehp-1 ikPDqf"
+  >
+    <div
+      class="home-group-container"
+    >
+      <div
+        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 hoPKUo"
+      >
+        <div
+          class="homepage-block"
+        >
+          <a
+            class="link"
+            href="/about"
+          >
+            <div
+              class="card-image"
+            >
+              <img
+                alt=""
+                class="img-responsive"
+                src="/img/gallery/darren.webp"
+              />
+            </div>
+            <div
+              class="link-holder"
+            >
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
+                />
+              </svg>
+              About me
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 hoPKUo"
+      >
+        <div
+          class="homepage-block"
+        >
+          <a
+            class="link"
+            href="/work"
+          >
+            <div
+              class="card-image"
+            >
+              <img
+                alt=""
+                class="img-responsive"
+                src="/img/gallery/zt4.webp"
+              />
+            </div>
+            <div
+              class="link-holder"
+            >
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 640 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+                />
+              </svg>
+              Work/CV
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 hoPKUo"
+      >
+        <div
+          class="homepage-block"
+        >
+          <a
+            class="link"
+            href="/music"
+          >
+            <div
+              class="card-image"
+            >
+              <img
+                alt=""
+                class="img-responsive"
+                src="/img/gallery/singing3.webp"
+              />
+            </div>
+            <div
+              class="link-holder"
+            >
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M470.38 1.51L150.41 96A32 32 0 0 0 128 126.51v261.41A139 139 0 0 0 96 384c-53 0-96 28.66-96 64s43 64 96 64 96-28.66 96-64V214.32l256-75v184.61a138.4 138.4 0 0 0-32-3.93c-53 0-96 28.66-96 64s43 64 96 64 96-28.65 96-64V32a32 32 0 0 0-41.62-30.49z"
+                />
+              </svg>
+              Music
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 hoPKUo"
+      >
+        <div
+          class="homepage-block"
+        >
+          <a
+            class="link"
+            href="/gallery"
+          >
+            <div
+              class="card-image"
+            >
+              <img
+                alt=""
+                class="img-responsive"
+                src="/img/gallery/zt7.webp"
+              />
+            </div>
+            <div
+              class="link-holder"
+            >
+              <svg
+                aria-hidden="true"
+                fill="currentColor"
+                height="1em"
+                stroke="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M464 448H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48zM112 120c-30.928 0-56 25.072-56 56s25.072 56 56 56 56-25.072 56-56-25.072-56-56-56zM64 384h384V272l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L208 320l-55.515-55.515c-4.686-4.686-12.284-4.686-16.971 0L64 336v48z"
+                />
+              </svg>
+              Gallery
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

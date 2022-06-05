@@ -2,21 +2,25 @@
 
 exports[`PageHeader module matches snapshot 1`] = `
 <DocumentFragment>
-  <div
-    class="page-header"
+  <section
+    class="moduleStyles__PageHeaderWrapper-sc-187oehp-8 hBFPQi"
   >
     <div
-      class="title"
+      class="page-header"
     >
-      <h1>
-        title
-      </h1>
+      <div
+        class="title"
+      >
+        <h1>
+          title
+        </h1>
+      </div>
+      <div
+        class="sub-title"
+      >
+        subTitle
+      </div>
     </div>
-    <div
-      class="sub-title"
-    >
-      subTitle
-    </div>
-  </div>
+  </section>
 </DocumentFragment>
 `;

@@ -1,15 +1,18 @@
 import { companyInfo } from 'utils/config';
+import { FooterWrapper } from 'modules/moduleStyles'
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
-        <footer className="footer" role="contentinfo">
-            <div className="inner-content">
-                <div className="copyright">
-                    &copy;{currentYear} {companyInfo.name}
+        <FooterWrapper>
+            <div className="footer" role="contentinfo">
+                <div className="inner-content">
+                    <div className="copyright">
+                        &copy;{currentYear} {companyInfo.name}
+                    </div>
                 </div>
             </div>
-        </footer>
+        </FooterWrapper>
     );
 };
 

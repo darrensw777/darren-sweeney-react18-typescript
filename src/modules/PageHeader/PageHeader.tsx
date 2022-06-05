@@ -1,20 +1,17 @@
-interface PageTitleProps {
-    title: string;
-    subTitle?: string;
-}
-interface Props {
-    pageTitle: PageTitleProps;
-}
+import { PageHeaderWrapper } from 'modules/moduleStyles'
+import { PageHeaderProps } from 'utils/interfaces'
 
-const PageHeader = ({ pageTitle }: Props) => {
+const PageHeader = ({ pageTitle }: PageHeaderProps) => {
     const { title, subTitle } = pageTitle;
     return (
-        <div className="page-header">
-            <div className="title">
-                <h1>{title}</h1>
+        <PageHeaderWrapper>
+            <div className="page-header">
+                <div className="title">
+                    <h1>{title}</h1>
+                </div>
+                {subTitle && <div className="sub-title">{subTitle}</div>}
             </div>
-            {subTitle && <div className="sub-title">{subTitle}</div>}
-        </div>
+        </PageHeaderWrapper>
     );
 };
 

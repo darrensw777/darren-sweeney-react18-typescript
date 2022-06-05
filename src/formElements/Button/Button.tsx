@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import { ButtonWrapper } from 'formElements/formElementsStyles'
 
 const Button: React.FunctionComponent<
     React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & {
@@ -11,9 +12,11 @@ const Button: React.FunctionComponent<
 > = ({ id, type = 'submit', disabled = false, primary = true, label, ...props }) => {
     const buttonClasses = classNames('btn', 'btn-primary', !primary && 'hollow');
     return (
-        <button {...props} id="contactFormSubmit" type={type} disabled={disabled} className={buttonClasses}>
-            {label}
-        </button>
+        <ButtonWrapper>
+            <button {...props} id="contactFormSubmit" type={type} disabled={disabled} className={buttonClasses}>
+                {label}
+            </button>
+        </ButtonWrapper>
     );
 };
 
