@@ -51,7 +51,7 @@ export const CvViewerWrapper = styled.div`
     }
 `;
 
-export const HomePageBlockContainerWrapper = styled.section`
+export const HomePageBlockContainerWrapper = styled.div`
     .home-group-container {
         display: flex;
         overflow: hidden;
