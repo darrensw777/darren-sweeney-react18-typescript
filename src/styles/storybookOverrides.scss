@@ -1,3 +1,73 @@
+// Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap);
+
+// Font Variables
+$roboto-slab: 'Roboto Slab',
+serif;
+$dosis: 'Dosis',
+serif;
+$open-sans: 'Open Sans',
+sans-serif;
+
+$header-font: $roboto-slab !default;
+$bold-font: $roboto-slab !default;
+$regular-font: $dosis !default;
+
+$xl-font-size: 1.5em;
+$title-font-size: 1.25em;
+$regular-font-size: 1em;
+$small-font-size: 0.75em;
+$tiny-font-size: 0.5em;
+
+@mixin header-font {
+    font-family: $roboto-slab;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-rendering: optimizeLegibility;
+}
+
+@mixin regular-font {
+    font-family: $dosis;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-rendering: optimizeLegibility;
+    line-height: 24px;
+}
+
+@mixin body-copy-small {
+    @include regular-font;
+    font-size: $small-font-size;
+    @extend %lineHeight14;
+}
+
+@mixin body-copy {
+    @include regular-font;
+    font-size: $regular-font-size;
+    @extend %lineHeight14;
+}
+
+@mixin sidenav {
+    font-family: $bold-font;
+    font-size: $regular-font-size;
+    @extend %lineHeight20;
+    letter-spacing: -0.88px;
+}
+
+@for $i from 6 through 40 {
+    %lineHeight#{$i} {
+        line-height: #{$i}px;
+    }
+}
+
+%tab-title,
+.tab-title {
+    font-family: $bold-font;
+    font-size: $title-font-size;
+    @extend %lineHeight20;
+    letter-spacing: -0.45px;
+}
+
 .sidebar-container {
     .sidebar-menu {
         top: 0 !important;
@@ -6,4 +76,37 @@
 
 .sidebar-container #burger-menu {
     display: block !important;
+}
+
+p {
+    @include body-copy;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 16px;
 }

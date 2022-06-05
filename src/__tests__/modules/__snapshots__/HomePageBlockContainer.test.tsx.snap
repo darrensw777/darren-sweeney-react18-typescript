@@ -2,8 +2,8 @@
 
 exports[`HomePageBlockContainer container matches snapshot 1`] = `
 <DocumentFragment>
-  <section
-    class="moduleStyles__HomePageBlockContainerWrapper-sc-187oehp-1 ikPDqf"
+  <div
+    class="moduleStyles__HomePageBlockContainerWrapper-sc-187oehp-1 jqUcdL"
   >
     <div
       class="home-group-container"
@@ -173,6 +173,6 @@ exports[`HomePageBlockContainer container matches snapshot 1`] = `
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </DocumentFragment>
 `;

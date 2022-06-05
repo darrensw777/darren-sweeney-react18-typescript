@@ -27,7 +27,7 @@ exports[`AboutMeBlock container matches snapshot 1`] = `
         Interests
       </h3>
       <section
-        class="moduleStyles__InterestListsWrapper-sc-187oehp-7 fzQbfK"
+        class="moduleStyles__InterestListsWrapper-sc-187oehp-7 hiJHin"
       >
         <div
           class="question-container"
