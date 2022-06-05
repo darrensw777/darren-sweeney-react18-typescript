@@ -250,7 +250,7 @@ export const InterestListsWrapper = styled.section`
                 li {
                     line-height: 22px;
                     &:before {
-                        content: ' •  ';
+                        content: '•    ';
                         color: ${PRIMARY_GREY};
                         font-size: 18px;
                         margin-left: 8px;
@@ -261,12 +261,10 @@ export const InterestListsWrapper = styled.section`
             @media screen and (min-width: 768px) {
                 ul > li {
                     display: inline-block;
-                    margin-right: ${MARGIN_SMALL};
                     &:before {
-                        content: ' •  ';
+                        content: '•    ';
                         color: ${PRIMARY_GREY};
                         font-size: 18px;
-                        margin-left: 8px;
                     }
                 }
 
