@@ -55,7 +55,7 @@ export const HomePageBlockContainerWrapper = styled.div`
     .home-group-container {
         display: flex;
         overflow: hidden;
-        @include margin-bottom;
+        ${MarginBottom};
         justify-content: space-between;
         flex-wrap: wrap;
     }
