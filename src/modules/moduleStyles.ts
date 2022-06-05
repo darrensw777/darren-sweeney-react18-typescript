@@ -12,7 +12,7 @@ import {
     MarginRight,
     BorderRadius,
 } from 'utils/styling/mixins';
-import { INPUT_MAX_WIDTH, INPUT_FIELD_HEIGHT, HEADER_HEIGHT, MARGIN, MARGIN_SMALL } from 'utils/styling/variables';
+import { INPUT_MAX_WIDTH, HEADER_HEIGHT, MARGIN, MARGIN_SMALL, SITE_MAX_WIDTH } from 'utils/styling/variables';
 
 const BREAKPOINT = '676px';
 
@@ -121,7 +121,8 @@ export const HeaderWrapper = styled.header`
 
         .header__wrapper {
             .inner-content {
-                width: 100%;
+                max-width: ${SITE_MAX_WIDTH};
+                margin: auto;
                 display: flex;
                 height: ${HEADER_HEIGHT};
 
