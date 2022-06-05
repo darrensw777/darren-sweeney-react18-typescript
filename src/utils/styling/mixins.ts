@@ -44,7 +44,7 @@ export const MarginBottom = () => css`
 
 export const HeaderFont = () => css`
     font-family: 'Roboto Slab', serif;
-    font-weight: 700;
+    font-weight: 400;
     letter-spacing: 0.05em;
     text-rendering: optimizeLegibility;
 `;
