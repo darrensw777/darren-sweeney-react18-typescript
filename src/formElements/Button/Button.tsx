@@ -13,7 +13,7 @@ const Button: React.FunctionComponent<
     const buttonClasses = classNames('btn', 'btn-primary', !primary && 'hollow');
     return (
         <ButtonWrapper>
-            <button {...props} id="contactFormSubmit" type={type} disabled={disabled} className={buttonClasses}>
+            <button {...props} id="contactFormSubmit" type={type} disabled={disabled} className={buttonClasses} aria-label={label}>
                 {label}
             </button>
         </ButtonWrapper>

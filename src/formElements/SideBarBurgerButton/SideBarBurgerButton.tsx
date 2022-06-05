@@ -17,6 +17,7 @@ const SideBarBurgerButton: React.FunctionComponent<
             onClick={() => {
                 setMenuOpen(!menuOpen);
             }}
+            aria-label="Show site menu"
         >
             {children}
         </button>
