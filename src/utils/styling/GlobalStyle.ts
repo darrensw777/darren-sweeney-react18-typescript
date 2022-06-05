@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
 
         h1, h2, h3, h4 {
             font-family: "Roboto Slab", serif;
-            font-weight: 700;
+            font-weight: 400;
             letter-spacing: 1px;
         }
 

@@ -4,6 +4,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Routes from './routes/';
 import GlobalStyle from 'utils/styling/GlobalStyle';
+import FontStyles from 'utils/styling/FontStyles';
 
 import './styles/styles.scss';
 
@@ -11,6 +12,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as Element);
 root.render(
     <BrowserRouter basename="">
         <GlobalStyle />
+        <FontStyles />
         <Routes />
     </BrowserRouter>
 );
