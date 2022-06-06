@@ -9,7 +9,7 @@ exports[`HomePageBlockContainer container matches snapshot 1`] = `
       class="home-group-container"
     >
       <div
-        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 hoPKUo"
+        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 kqpejr"
       >
         <div
           class="homepage-block"
@@ -50,7 +50,7 @@ exports[`HomePageBlockContainer container matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 hoPKUo"
+        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 kqpejr"
       >
         <div
           class="homepage-block"
@@ -91,7 +91,7 @@ exports[`HomePageBlockContainer container matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 hoPKUo"
+        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 kqpejr"
       >
         <div
           class="homepage-block"
@@ -132,7 +132,7 @@ exports[`HomePageBlockContainer container matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 hoPKUo"
+        class="componentStyles__HomePageBlockWrapper-sc-1wsblha-1 kqpejr"
       >
         <div
           class="homepage-block"

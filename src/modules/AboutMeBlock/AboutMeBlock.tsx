@@ -3,7 +3,7 @@ import { InterestLists } from 'modules';
 import { CopyPropsParent } from 'utils/interfaces';
 import { AboutMeBlockWrapper } from 'modules/moduleStyles'
 
-const AboutMeBlock = ({ copy }: CopyPropsParent) => {
+const AboutMeBlock = ({ copy }: CopyPropsParent): JSX.Element => {
     const { general, interests, greetings } = copy;
     const generalCopy = general.map((para, idx) => <p key={idx}>{para}</p>);
     return (

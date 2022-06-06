@@ -3,7 +3,7 @@
 exports[`SideBarMenu component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="componentStyles__SideBarMenuWrapper-sc-1wsblha-2 dTCYpA"
+    class="componentStyles__SideBarMenuWrapper-sc-1wsblha-2 qalP"
   >
     <div
       class="sidebar-container"
@@ -12,6 +12,7 @@ exports[`SideBarMenu component matches snapshot 1`] = `
         class="formElementsStyles__SideBarBurgerButtonWrapper-sc-1yt8nu9-0 kHAvLr"
       >
         <button
+          aria-label="Show site menu"
           class="btn close-menu-icon"
           id="burger-menu"
         >
@@ -35,7 +36,7 @@ exports[`SideBarMenu component matches snapshot 1`] = `
           class="nav-block-container"
         >
           <div
-            class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 eGsRvE"
+            class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 kKkdZL"
           >
             <div
               class="side-nav-block"
@@ -58,7 +59,7 @@ exports[`SideBarMenu component matches snapshot 1`] = `
             </div>
           </div>
           <div
-            class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 eGsRvE"
+            class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 kKkdZL"
           >
             <div
               class="side-nav-block"

@@ -3,7 +3,7 @@
 exports[`SideBarMenuLinks component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 eGsRvE"
+    class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 kKkdZL"
   >
     <div
       class="side-nav-block"
@@ -26,7 +26,7 @@ exports[`SideBarMenuLinks component matches snapshot 1`] = `
     </div>
   </div>
   <div
-    class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 eGsRvE"
+    class="componentStyles__SideNavBlockWrapper-sc-1wsblha-3 kKkdZL"
   >
     <div
       class="side-nav-block"

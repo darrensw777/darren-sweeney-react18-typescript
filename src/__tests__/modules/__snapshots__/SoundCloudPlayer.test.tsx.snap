@@ -8,24 +8,28 @@ exports[`SoundCloudPlayer module matches snapshot 1`] = `
     <div
       class="inner-content soundcloud-player"
     >
-      <iframe
-        class="player"
-        frameborder="no"
-        height="166"
-        scrolling="no"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1252449361&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true&show_teaser=false"
-        title="music"
-        width="100%"
-      />
-      <iframe
-        class="player"
-        frameborder="no"
-        height="166"
-        scrolling="no"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/246065520&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true&show_teaser=false"
-        title="music"
-        width="100%"
-      />
+      <div>
+        <iframe
+          class="player"
+          frameborder="no"
+          height="166"
+          scrolling="no"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1252449361&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true&show_teaser=false"
+          title="music"
+          width="100%"
+        />
+      </div>
+      <div>
+        <iframe
+          class="player"
+          frameborder="no"
+          height="166"
+          scrolling="no"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/246065520&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true&show_teaser=false"
+          title="music"
+          width="100%"
+        />
+      </div>
     </div>
   </section>
 </DocumentFragment>
