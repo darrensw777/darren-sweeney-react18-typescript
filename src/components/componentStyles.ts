@@ -145,6 +145,7 @@ export const SideBarMenuWrapper = styled.div`
                 @media (max-width: 526px) {
                     text-align: right;
                     ${PaddingRight}
+                    font-size: 30px;
                 }
             }
 
