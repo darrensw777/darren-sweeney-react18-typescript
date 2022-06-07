@@ -81,7 +81,7 @@ const ContactFormik = ({ CONTACT_COPY }) => {
                                         id="name"
                                     />
                                     <InputField
-                                        fieldName={name}
+                                        fieldName={email}
                                         touched={touched}
                                         errors={errors}
                                         className="input-text"
