@@ -1,7 +1,8 @@
 import { InterestsProps } from "utils/interfaces";
 import { InterestListsWrapper } from 'modules/moduleStyles'
+import { ReactElement } from "react";
 
-const InterestLists = ({ interests }: InterestsProps) => {
+const InterestLists = ({ interests }: InterestsProps): ReactElement => {
     return (
         <InterestListsWrapper>
             {interests.map((interest, idx) => {

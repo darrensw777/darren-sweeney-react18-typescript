@@ -4,7 +4,7 @@ import { SoundCloudPlayer } from 'modules';
 import soundcloudIds from 'utils/soundCloudIds';
 import { ContainerWrapper } from "./containerStyles";
 
-const Music = () => {
+const Music = (): JSX.Element => {
     const MUSIC_COPY = getCopy({ copyKey: 'MUSIC_COPY', copyPath: 'containers/music' });
 
     return (

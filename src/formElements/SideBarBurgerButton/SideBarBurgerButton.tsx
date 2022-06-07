@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactElement, ReactNode } from 'react';
 import { SideBarBurgerButtonWrapper } from 'formElements/formElementsStyles'
 
 const SideBarBurgerButton: React.FunctionComponent<
@@ -8,7 +8,7 @@ const SideBarBurgerButton: React.FunctionComponent<
         menuOpen: boolean,
         children: ReactNode,
     }
-> = ({ burgerClasses, setMenuOpen, menuOpen, children, ...props }) => (
+> = ({ burgerClasses, setMenuOpen, menuOpen, children, ...props }): ReactElement => (
     <SideBarBurgerButtonWrapper>
         <button
             {...props}

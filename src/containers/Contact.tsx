@@ -4,7 +4,7 @@ import getCopy from "utils/getCopy";
 import { ContainerWrapper } from "./containerStyles";
 
 
-const Contact = () => {
+const Contact = (): JSX.Element => {
     const CONTACT_COPY = getCopy({ copyKey: "CONTACT_COPY", copyPath: "containers/contact" });
 
     return (

@@ -1,7 +1,8 @@
 import { PageHeaderWrapper } from 'modules/moduleStyles'
+import { ReactElement } from 'react';
 import { PageHeaderProps } from 'utils/interfaces'
 
-const PageHeader = ({ pageTitle }: PageHeaderProps) => {
+const PageHeader = ({ pageTitle }: PageHeaderProps): ReactElement => {
     const { title, subTitle } = pageTitle;
     return (
         <PageHeaderWrapper>

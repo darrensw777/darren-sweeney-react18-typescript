@@ -1,16 +1,9 @@
 import { Link } from 'react-router-dom';
 import icons from 'utils/faIcons';
 import { SideNavBlockWrapper } from 'components/componentStyles'
+import { SideNavBlockProps } from 'utils/interfaces';
 
-interface Props {
-    link: string;
-    iconClass: string;
-    title: string;
-    backgroundColor: string;
-    onClick: any;
-}
-
-const SideNavBlock = ({ link, iconClass, title, backgroundColor, onClick }: Props) => {
+const SideNavBlock = ({ link, iconClass, title, backgroundColor, onClick }: SideNavBlockProps) => {
     const bgColor = `linear-gradient(to bottom, #f1f1f1 50%, ${backgroundColor} 50%)`;
 
     return (

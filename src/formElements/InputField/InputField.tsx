@@ -1,5 +1,6 @@
 import { Field, FormikErrors, FormikTouched, useFormikContext } from 'formik';
 import { InputFieldWrapper } from 'formElements/formElementsStyles'
+import { ReactElement } from 'react';
 
 interface InputFieldProps {
     fieldName: string;
@@ -9,7 +10,7 @@ interface InputFieldProps {
     rows?: string;
 }
 
-const InputField = ({ fieldName, className, id, component = '', rows = '' }: InputFieldProps) => {
+const InputField = ({ fieldName, className, id, component = '', rows = '' }: InputFieldProps): ReactElement => {
     const { touched, errors }: { touched: FormikTouched<any>, errors: FormikErrors<any> } = useFormikContext();
     const errorMessage: any = errors[id];
     return (

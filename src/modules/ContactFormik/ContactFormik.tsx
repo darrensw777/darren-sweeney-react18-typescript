@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { useState } from 'react';
+import { ReactElement, useState } from 'react';
 import { Formik } from 'formik';
 import contactFormValidation from 'validation/contactForm';
 import { InputField, Button } from 'formElements';
@@ -22,7 +22,7 @@ const encode = (data: EncodeProps) => {
         .join('&');
 };
 
-const ContactFormik = ({ CONTACT_COPY }) => {
+const ContactFormik = ({ CONTACT_COPY }): ReactElement => {
     // prettier-ignore
     const [messageSendStatus, setMessageSendStatus] = useState<string | null>(null);
 

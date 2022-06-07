@@ -3,7 +3,7 @@ import galleryImages from 'utils/galleryImages';
 import getCopy from 'utils/getCopy';
 import { ContainerWrapper } from "./containerStyles";
 
-const Gallery = () => {
+const Gallery = (): JSX.Element => {
     const GALLERY_COPY = getCopy({ copyKey: 'GALLERY_COPY', copyPath: 'containers/gallery' });
 
     return (

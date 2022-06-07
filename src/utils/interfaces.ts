@@ -116,3 +116,27 @@ interface PageTitleProps {
 export interface PageHeaderProps {
     pageTitle: PageTitleProps;
 }
+
+/**
+ * Homepage block
+ */
+
+export interface HomePageBlockP {
+    link: string;
+    homeImagePath: string;
+    iconClass: string;
+    title: string;
+    backgroundColor: string;
+}
+
+/**
+ * SideNavBlock
+ */
+
+export interface SideNavBlockProps {
+    link: string;
+    iconClass: string;
+    title: string;
+    backgroundColor: string;
+    onClick: any;
+}

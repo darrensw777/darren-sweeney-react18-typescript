@@ -1,8 +1,8 @@
-import { useState, useReducer, useEffect } from 'react';
+import { useState, useReducer, useEffect, ReactElement } from 'react';
 import { CvPaginationProps, State, Action } from 'utils/interfaces'
 import { CvPaginationWrapper } from 'components/componentStyles'
 
-const counterReducer = (state: State, action: Action) => {
+const counterReducer = (state: State, action: Action): { pageNumber: number } => {
     switch (action.type) {
         case 'INCREMENT':
             return { pageNumber: state.pageNumber + 1 };
@@ -13,7 +13,7 @@ const counterReducer = (state: State, action: Action) => {
     }
 };
 
-const CvPagination = ({ cvPages, CV_VIEWER, setPageState, pageState }: CvPaginationProps) => {
+const CvPagination = ({ cvPages, CV_VIEWER, setPageState, pageState }: CvPaginationProps): ReactElement => {
     const [numPages] = useState(cvPages.length);
     const [state, dispatch] = useReducer(counterReducer, pageState);
 

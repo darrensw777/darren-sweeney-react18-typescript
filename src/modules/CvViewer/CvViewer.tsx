@@ -6,7 +6,7 @@ import { CvViewerWrapper } from 'modules/moduleStyles'
 
 const cvPages = ['dsCV1.webp', 'dsCV2.webp', 'dsCV3.webp', 'dsCV4.webp'];
 
-const CvViewer = () => {
+const CvViewer = (): JSX.Element => {
     const [pageState, setPageState] = useState({ pageNumber: 1 })
     const CV_VIEWER = getCopy({ copyKey: "CV_VIEWER", copyPath: "modules/CV_VIEWER.js" });
 

@@ -54,7 +54,7 @@ exports[`ContactFormik container matches snapshot 1`] = `
               class="label"
               for="name"
             >
-              Name:
+              Email address:
             </label>
             <input
               class="input-text"

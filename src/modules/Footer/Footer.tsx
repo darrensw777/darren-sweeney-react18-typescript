@@ -1,7 +1,7 @@
 import { companyInfo } from 'utils/config';
 import { FooterWrapper } from 'modules/moduleStyles'
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
     const currentYear = new Date().getFullYear();
     return (
         <FooterWrapper>

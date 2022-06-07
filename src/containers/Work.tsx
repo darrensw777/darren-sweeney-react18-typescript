@@ -3,7 +3,7 @@ import getCopy from "utils/getCopy";
 import { CvViewer } from "modules";
 import { ContainerWrapper } from "./containerStyles";
 
-const Work = () => {
+const Work = (): JSX.Element => {
     const WORK_COPY = getCopy({ copyKey: "WORK_COPY", copyPath: "containers/work" });
 
     return (

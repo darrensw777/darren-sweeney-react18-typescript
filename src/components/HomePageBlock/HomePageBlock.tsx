@@ -1,16 +1,11 @@
 import { Link } from "react-router-dom";
 import icons from 'utils/faIcons';
 import { HomePageBlockWrapper } from 'components/componentStyles'
+import { HomePageBlockP } from 'utils/interfaces'
 
-interface Props {
-    link: string;
-    homeImagePath: string;
-    iconClass: string;
-    title: string;
-    backgroundColor: string;
-}
 
-const HomePageBlock = ({ link, homeImagePath, iconClass, title, backgroundColor }: Props) => {
+
+const HomePageBlock = ({ link, homeImagePath, iconClass, title, backgroundColor }: HomePageBlockP) => {
 
     const bgColor = `linear-gradient(to bottom, #f1f1f1 50%, ${backgroundColor} 50%)`;
 

@@ -38,7 +38,7 @@ const Links = ({ headerLinks }: HeaderLinksProps) => {
     );
 };
 
-const Header = () => {
+const Header = (): JSX.Element => {
     const i18nDerived = useContext(I18nContext);
     const { language } = i18nDerived;
 

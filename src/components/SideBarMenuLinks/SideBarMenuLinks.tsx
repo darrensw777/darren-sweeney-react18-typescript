@@ -1,8 +1,9 @@
 import { SideNavBlock } from 'components';
+import { ReactElement } from 'react';
 import { GetCurrentPage } from 'utils/commonUtils';
 import { SideBarMenuLinksProps } from 'utils/interfaces';
 
-const SideBarMenuLinks = ({ setMenuOpen, navLinksAndStyles }: SideBarMenuLinksProps) => {
+const SideBarMenuLinks = ({ setMenuOpen, navLinksAndStyles }: SideBarMenuLinksProps): ReactElement => {
     const currentPage = GetCurrentPage();
 
     return (

@@ -1,8 +1,9 @@
 import { HomePageBlock } from "components";
 import { HomePageBlockContainerWrapper } from 'modules/moduleStyles';
+import { ReactElement } from "react";
 import { HomePageBlockContainerProps } from 'utils/interfaces'
 
-const Blocks = ({ navLinksAndStyles }: HomePageBlockContainerProps) => (
+const Blocks = ({ navLinksAndStyles }: HomePageBlockContainerProps): ReactElement => (
     <HomePageBlockContainerWrapper>
         <div className="home-group-container">
             {navLinksAndStyles

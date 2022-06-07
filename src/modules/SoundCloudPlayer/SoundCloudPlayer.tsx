@@ -1,9 +1,9 @@
-import { ReactNode, useState } from "react";
+import { ReactElement, ReactNode, useState } from "react";
 import { SoundCloudPlayerWrapper } from 'modules/moduleStyles'
 
 interface SoundCloudPlayerProps { soundcloudIds: number[] }
 
-const SoundCloudMusic = ({ soundcloudIds }: SoundCloudPlayerProps) => {
+const SoundCloudMusic = ({ soundcloudIds }: SoundCloudPlayerProps): ReactElement => {
     // prettier-ignore
     const [iframes, setIframes] = useState<ReactNode[]>([]);
 
@@ -42,7 +42,7 @@ const SoundCloudMusic = ({ soundcloudIds }: SoundCloudPlayerProps) => {
     return <>{iframes}</>;
 };
 
-const SoundCloudPlayer = ({ soundcloudIds }: SoundCloudPlayerProps) => {
+const SoundCloudPlayer = ({ soundcloudIds }: SoundCloudPlayerProps): ReactElement => {
     return (
         <SoundCloudPlayerWrapper>
             <div className="inner-content soundcloud-player">
