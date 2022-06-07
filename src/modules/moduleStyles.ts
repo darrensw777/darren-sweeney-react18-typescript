@@ -158,6 +158,7 @@ export const HeaderWrapper = styled.header`
 
                     @media (max-width: 526px) {
                         text-align: right;
+                        font-size: 30px;
                     }
                 }
 
