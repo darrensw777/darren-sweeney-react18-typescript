@@ -24,7 +24,7 @@ exports[`ContactFormik container matches snapshot 1`] = `
           All fields are required
         </p>
         <div
-          class="formElementsStyles__InputFieldWrapper-sc-1yt8nu9-2 gPJWae"
+          class="formElementsStyles__InputFieldWrapper-sc-5xvoh1-2 eIaxFt"
         >
           <div
             class="field"
@@ -45,7 +45,7 @@ exports[`ContactFormik container matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="formElementsStyles__InputFieldWrapper-sc-1yt8nu9-2 gPJWae"
+          class="formElementsStyles__InputFieldWrapper-sc-5xvoh1-2 eIaxFt"
         >
           <div
             class="field"
@@ -66,7 +66,7 @@ exports[`ContactFormik container matches snapshot 1`] = `
           </div>
         </div>
         <div
-          class="formElementsStyles__InputFieldWrapper-sc-1yt8nu9-2 gPJWae"
+          class="formElementsStyles__InputFieldWrapper-sc-5xvoh1-2 eIaxFt"
         >
           <div
             class="field"
@@ -90,7 +90,7 @@ exports[`ContactFormik container matches snapshot 1`] = `
           class="buttons"
         >
           <div
-            class="formElementsStyles__ButtonWrapper-sc-1yt8nu9-1 hEDtBD"
+            class="formElementsStyles__ButtonWrapper-sc-5xvoh1-1 karwgk"
           >
             <button
               aria-label="Send message"
@@ -102,7 +102,7 @@ exports[`ContactFormik container matches snapshot 1`] = `
             </button>
           </div>
           <div
-            class="formElementsStyles__ButtonWrapper-sc-1yt8nu9-1 hEDtBD"
+            class="formElementsStyles__ButtonWrapper-sc-5xvoh1-1 karwgk"
           >
             <button
               aria-label="Clear"

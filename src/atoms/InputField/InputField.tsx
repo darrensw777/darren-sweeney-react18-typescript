@@ -1,5 +1,5 @@
 import { Field, FormikErrors, FormikTouched, useFormikContext } from 'formik';
-import { InputFieldWrapper } from 'formElements/formElementsStyles'
+import { InputFieldWrapper } from 'atoms/formElementsStyles'
 import { ReactElement } from 'react';
 
 interface InputFieldProps {

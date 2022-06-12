@@ -1,5 +1,5 @@
 import { screen, render, fireEvent } from '@testing-library/react';
-import InputField from 'formElements/InputField';
+import InputField from 'atoms/InputField';
 import { Formik } from 'formik';
 
 test('should have validation error given input field is touched and error exists on form', async () => {
@@ -7,7 +7,7 @@ test('should have validation error given input field is touched and error exists
     const labelName = 'Name:';
     render(
         <Formik
-            onSubmit={() => {}}
+            onSubmit={() => { }}
             initialValues={{ name: '' }}
             validate={(values) => {
                 let errors: { name?: string } = {};

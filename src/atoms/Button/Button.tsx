@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { ButtonWrapper } from 'formElements/formElementsStyles'
+import { ButtonWrapper } from 'atoms/formElementsStyles'
 import { ReactElement } from 'react';
 
 const Button: React.FunctionComponent<

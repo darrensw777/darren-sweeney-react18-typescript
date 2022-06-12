@@ -1,7 +1,7 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Formik } from 'formik';
 
-import { InputField } from 'formElements';
+import { InputField } from 'atoms';
 
 //👇 This default export determines where your story goes in the story list
 export default {

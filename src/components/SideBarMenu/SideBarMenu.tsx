@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 import { SideBarMenuLinks } from 'components';
 import { SideBarMenuProps } from 'utils/interfaces';
-import { SideBarBurgerButton } from 'formElements';
+import { SideBarBurgerButton } from 'atoms';
 import { SideBarMenuWrapper } from 'components/componentStyles'
 
 const SideBarMenu = ({ navLinksAndStyles }: SideBarMenuProps): ReactElement => {

@@ -9,7 +9,7 @@ exports[`SideBarMenu component matches snapshot 1`] = `
       class="sidebar-container"
     >
       <div
-        class="formElementsStyles__SideBarBurgerButtonWrapper-sc-1yt8nu9-0 kHAvLr"
+        class="formElementsStyles__SideBarBurgerButtonWrapper-sc-5xvoh1-0 hvxmHA"
       >
         <button
           aria-label="Show site menu"

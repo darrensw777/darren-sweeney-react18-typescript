@@ -1,5 +1,5 @@
 import { ReactElement, ReactNode } from 'react';
-import { SideBarBurgerButtonWrapper } from 'formElements/formElementsStyles'
+import { SideBarBurgerButtonWrapper } from 'atoms/formElementsStyles'
 
 const SideBarBurgerButton: React.FunctionComponent<
     React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & {

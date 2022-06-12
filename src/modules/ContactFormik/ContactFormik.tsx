@@ -2,7 +2,7 @@
 import { ReactElement, useState } from 'react';
 import { Formik } from 'formik';
 import contactFormValidation from 'validation/contactForm';
-import { InputField, Button } from 'formElements';
+import { InputField, Button } from 'atoms';
 import { ContactFormikWrapper } from 'modules/moduleStyles'
 
 interface MessageProps {

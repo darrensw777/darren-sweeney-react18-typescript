@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { Button } from 'formElements';
+import { Button } from 'atoms';
 
 //👇 This default export determines where your story goes in the story list
 export default {
@@ -19,7 +19,7 @@ export const Primary = Template.bind({});
 
 Primary.args = {
   /*👇 The args you need here will depend on your component */
-  type:'submit',
+  type: 'submit',
   label: 'Click me'
 };
 
@@ -27,7 +27,7 @@ export const Secondary = Template.bind({});
 
 Secondary.args = {
   /*👇 The args you need here will depend on your component */
-  type:'submit',
+  type: 'submit',
   label: 'Click me',
   primary: false
 };

@@ -1,6 +1,6 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import { SideBarBurgerButton } from 'formElements';
+import { SideBarBurgerButton } from 'atoms';
 
 //👇 This default export determines where your story goes in the story list
 export default {
