@@ -23,8 +23,8 @@ const ScrollToTop = ({ children }: { children: ReactNode }): ReactElement => {
 };
 
 interface Props {
-    Component: any;
-    Layout: any;
+    Component: React.ComponentType<any>;
+    Layout: React.ComponentType<any>;
     props?: object;
     page: string;
 }
