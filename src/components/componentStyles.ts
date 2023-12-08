@@ -31,6 +31,10 @@ export const CvPaginationWrapper = styled.div`
                 border: none;
                 cursor: pointer;
                 font-size: ${FONT_SIZE_XL};
+                opacity: 0.5;
+                &:not(.disabled):hover {
+                    opacity: 1;
+                }
             }
         }
     }

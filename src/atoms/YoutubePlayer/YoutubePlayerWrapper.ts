@@ -10,14 +10,16 @@ const YoutubePlayerWrapper = styled.div`
             margin-bottom: 1%;
             height: 0;
             overflow: hidden;
+            @media (max-width: 768px) {
+                flex-basis: 100%;
+                padding-bottom: 28.25%;
+            }
             @media (min-width: 769px) {
                 flex-basis: 50%;
-                margin-bottom: 1%;
+                padding-bottom: 28.25%;
             }
-            flex-basis: 100%;
-            @extend %margin-bottom;
             iframe {
-                border-radius: $border-radius;
+                border-radius: 10px;
                 z-index: 2;
                 width: 98%;
                 height: 100%;

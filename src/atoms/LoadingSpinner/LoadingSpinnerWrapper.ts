@@ -1,7 +1,6 @@
 import styled from 'styled-components/macro';
 
 const LoadingSpinnerWrapper = styled.div`
-    .loader {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -10,6 +9,7 @@ const LoadingSpinnerWrapper = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 0;
         .spinner-container {
             position: relative;
             width: 100px;
@@ -21,7 +21,7 @@ const LoadingSpinnerWrapper = styled.div`
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            border: 3px solid $secondary-color;
+            border: 3px solid grey;
             border-bottom: none;
             border-top: none;
             position: absolute;
@@ -56,7 +56,6 @@ const LoadingSpinnerWrapper = styled.div`
                 transform: rotate(0deg) scale(0.5);
             }
         }
-    }
 `;
 
 export default LoadingSpinnerWrapper;

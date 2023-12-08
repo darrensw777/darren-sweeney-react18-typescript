@@ -3,6 +3,6 @@ export const CV_VIEWER = {
     CONTACT: "Contact me",
     PAGE: "Page",
     OF: "of",
-    NEXT: "Next",
-    PREVIOUS: "Previous",
+    NEXT: "Next >",
+    PREVIOUS: "< Previous",
 };

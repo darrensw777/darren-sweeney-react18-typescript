@@ -5,16 +5,14 @@ import youtubeIds from 'utils/youtubeIds';
 import { LoadingSpinner } from 'atoms';
 
 const YoutubePlayer = (): ReactElement => {
-    const opts: YouTubeProps['opts'] = {
-        height: '390',
-        width: '640',
-        playerVars: {
-            autoplay: 0,
-        },
-    };
-
     const videos = youtubeIds.map(video => {
-
+        const opts: YouTubeProps['opts'] = {
+            height: '390',
+            width: '640',
+            playerVars: {
+                autoplay: 0,
+            },
+        };
         return (
             <div className="video-cell" key={video}>
                 <div className="loader">

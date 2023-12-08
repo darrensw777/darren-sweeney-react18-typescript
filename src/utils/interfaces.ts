@@ -138,5 +138,5 @@ export interface SideNavBlockProps {
     iconClass: string;
     title: string;
     backgroundColor: string;
-    onClick: any;
+    onClick: () => void;
 }

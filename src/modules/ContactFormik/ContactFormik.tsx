@@ -9,7 +9,7 @@ interface MessageProps {
     name: string;
     email: string;
     message: string;
-    [key: string]: any;
+    [key: string]: Record<string, any>;
 }
 
 interface EncodeProps {

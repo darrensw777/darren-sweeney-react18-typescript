@@ -1,11 +1,13 @@
-import React from 'react';
+import LoadingSpinnerWrapper from "./LoadingSpinnerWrapper";
 
 const LoadingSpinner = () => {
     return (
-        <div className="spinner-container">
-            <div className="spinner"></div>
-            <div className="inner-spinner"></div>
-        </div>
+        <LoadingSpinnerWrapper>
+            <div className="spinner-container">
+                <div className="spinner"></div>
+                <div className="inner-spinner"></div>
+            </div>
+        </LoadingSpinnerWrapper>
     );
 };
 

@@ -10,9 +10,11 @@ interface InputFieldProps {
     rows?: string;
 }
 
+type ErrorMessageProps = string | FormikErrors<any> | string[] | FormikErrors<any>[] | undefined;
+
 const InputField = ({ fieldName, className, id, component = '', rows = '' }: InputFieldProps): ReactElement => {
     const { touched, errors }: { touched: FormikTouched<any>, errors: FormikErrors<any> } = useFormikContext();
-    const errorMessage: any = errors[id];
+    const errorMessage: ErrorMessageProps = errors[id];
     return (
         <InputFieldWrapper>
             <div className="field">
@@ -22,7 +24,7 @@ const InputField = ({ fieldName, className, id, component = '', rows = '' }: Inp
                 <Field className={className} type="text" name={id} id={id} component={component} rows={rows} />
                 {touched[id] && errors[id] && (
                     <div className="danger" data-testid={`errors-${id}`}>
-                        {errorMessage}
+                        {errorMessage as string}
                     </div>
                 )}
             </div>

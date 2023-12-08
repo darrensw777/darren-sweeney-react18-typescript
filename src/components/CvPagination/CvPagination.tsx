@@ -66,7 +66,7 @@ const CvPagination = ({ cvPages, CV_VIEWER, setPageState, pageState }: CvPaginat
                         type="button"
                         disabled={stopPrev}
                         onClick={previousPage}
-                        className="btn"
+                        className={`btn ${stopPrev && 'disabled'}`}
                         data-testid="previousPage"
                     >
                         {PREVIOUS}
