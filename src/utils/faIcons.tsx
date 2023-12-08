@@ -1,4 +1,4 @@
-import { FaHome, FaInfoCircle, FaCode, FaMusic, FaImage, FaEnvelopeOpen } from 'react-icons/fa';
+import { FaHome, FaInfoCircle, FaCode, FaMusic, FaImage, FaVideo, FaEnvelopeOpen } from 'react-icons/fa';
 
 const icons = {
     FaHome: <FaHome aria-hidden="true" />,
@@ -6,6 +6,7 @@ const icons = {
     FaCode: <FaCode aria-hidden="true" />,
     FaMusic: <FaMusic aria-hidden="true" />,
     FaImage: <FaImage aria-hidden="true" />,
+    FaVideo: <FaVideo aria-hidden="true" />,
     FaEnvelopeOpen: <FaEnvelopeOpen aria-hidden="true" />,
 } as any;
 

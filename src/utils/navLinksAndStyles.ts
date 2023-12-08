@@ -39,9 +39,9 @@ const navLinksAndStyles = [
         link: '/videos',
         title: 'Videos',
         id: 'Videos',
-        iconClass: 'FaMusic',
-        backgroundColor: '#9b58b5',
-        homeImagePath: '/img/gallery/singing3.webp',
+        iconClass: 'FaVideo',
+        backgroundColor: '#9D7361',
+        homeImagePath: '/img/gallery/singing4.webp',
         navBlock: true,
     },
     {
@@ -60,7 +60,7 @@ const navLinksAndStyles = [
         iconClass: 'FaEnvelopeOpen',
         backgroundColor: '#d9a81d',
         homeImagePath: '/img/gallery/benidorm5.jpg',
-        navBlock: false,
+        navBlock: true,
     },
 ];
 
