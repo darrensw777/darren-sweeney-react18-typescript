@@ -33,6 +33,14 @@ export const HeaderCopy = {
             sideNavFullLine: false,
         },
         {
+            linkTo: '/videos',
+            label: 'Videos',
+            active: true,
+            sideNav: true,
+            headerNav: true,
+            sideNavFullLine: false,
+        },
+        {
             linkTo: '/gallery',
             label: 'Gallery',
             active: true,

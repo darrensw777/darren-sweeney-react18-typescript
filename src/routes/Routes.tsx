@@ -13,6 +13,7 @@ const Work = lazy(() => import('containers/Work'));
 const Music = lazy(() => import('containers/Music'));
 const Contact = lazy(() => import('containers/Contact'));
 const Gallery = lazy(() => import('containers/Gallery'));
+const Videos = lazy(() => import('containers/Videos'));
 
 const ScrollToTop = ({ children }: { children: ReactNode }): ReactElement => {
     const location = useLocation();
@@ -71,6 +72,10 @@ const AllRoutes = () => {
                     <Route
                         path="/music"
                         element={<RenderWithLayout Component={Music} Layout={Layout} page="music" />}
+                    />
+                    <Route
+                        path="/videos"
+                        element={<RenderWithLayout Component={Videos} Layout={Layout} page="videos" />}
                     />
                     <Route
                         path="/gallery"

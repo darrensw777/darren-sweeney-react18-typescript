@@ -8,3 +8,5 @@
 export { default as SideBarBurgerButton } from './SideBarBurgerButton';
 export { default as InputField } from './InputField';
 export { default as Button } from './Button';
+export { default as YoutubePlayer } from './YoutubePlayer';
+export { default as LoadingSpinner } from './LoadingSpinner';

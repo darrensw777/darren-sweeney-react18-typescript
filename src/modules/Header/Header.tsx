@@ -42,7 +42,7 @@ const Header = (): JSX.Element => {
     const i18nDerived = useContext(I18nContext);
     const { language } = i18nDerived;
 
-    const { HeaderCopy } = require(`constants/${language}/modules/Header.js`);
+    const { HeaderCopy } = require(`constants/${language}/modules/Header.ts`);
     const { headerLinks } = HeaderCopy;
 
     return (

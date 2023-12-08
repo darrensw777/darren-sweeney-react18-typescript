@@ -36,6 +36,15 @@ const navLinksAndStyles = [
         navBlock: true,
     },
     {
+        link: '/videos',
+        title: 'Videos',
+        id: 'Videos',
+        iconClass: 'FaMusic',
+        backgroundColor: '#9b58b5',
+        homeImagePath: '/img/gallery/singing3.webp',
+        navBlock: true,
+    },
+    {
         link: '/gallery',
         title: 'Gallery',
         id: 'Pictures',
