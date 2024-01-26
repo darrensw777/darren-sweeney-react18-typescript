@@ -2,12 +2,12 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CvPagination } from 'components';
 import getCopy from "utils/getCopy";
-import { CvViewerWrapper } from 'modules/moduleStyles'
+import { CvViewerWrapper } from 'modules/moduleStyles';
 
 const cvPages = ['dsCV1.webp', 'dsCV2.webp', 'dsCV3.webp', 'dsCV4.webp', 'dsCV5.webp'];
 
 const CvViewer = (): JSX.Element => {
-    const [pageState, setPageState] = useState({ pageNumber: 1 })
+    const [pageState, setPageState] = useState({ pageNumber: 1 });
     const CV_VIEWER = getCopy({ copyKey: "CV_VIEWER", copyPath: "modules/CV_VIEWER.ts" });
 
     const { DOWNLOAD, CONTACT } = CV_VIEWER;
@@ -16,7 +16,7 @@ const CvViewer = (): JSX.Element => {
         <CvViewerWrapper>
             <div className="cv-viewer">
                 <div className="links">
-                    <a href="/pdf/DarrenSweeney6.1.pdf" className="download-pdf" target="_blank">
+                    <a href="/pdf/DarrenSweeney6.5.pdf" className="download-pdf" target="_blank">
                         {DOWNLOAD}
                     </a>
                     <Link to="/contact">{CONTACT}</Link>
