@@ -1,6 +1,5 @@
 import { PageHeader } from "modules";
 import getCopy from "utils/getCopy";
-import { CvViewer } from "modules";
 import { ContainerWrapper } from "./containerStyles";
 import { Link } from "react-router-dom";
 
