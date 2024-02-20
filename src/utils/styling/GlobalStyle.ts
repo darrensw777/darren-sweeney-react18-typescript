@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
             background: ${WHITE};
             ${Padding}
 
-            p {
+            p, li, a {
                 ${BodyCopy}
                 line-height: 22px;
             }

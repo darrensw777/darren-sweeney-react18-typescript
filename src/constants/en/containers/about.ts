@@ -2,7 +2,7 @@ export const ABOUT_COPY = {
     pageTitle: {
         title: "About me",
         subTitle:
-            "TLDR; Living in Lincolnshire with my wife and our two boys, most of my work is taken up with freelance / contract projects. The main areas of work I concentrate on are web development contracts.",
+            "TLDR; Living in Lincolnshire with my family, most of my work is taken up with JavaScript software development.",
     },
     aboutMe: {
         greetings: {
@@ -11,7 +11,7 @@ export const ABOUT_COPY = {
             afternoon: "Good afternoon.",
         },
         general: [
-            "I currently work in the UK as a front end web developer.",
+            "I currently work in the UK as a software developer.",
             "In past lives I've been a singer, a welder, worked in retail, and I'm Series 7 Licenced (If you know, you know...)",
             "I strive to create web sites which are as per design, and efficient.",
         ],
